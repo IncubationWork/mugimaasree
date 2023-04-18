@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <h1>The output tag</h1>
+    <form oninput="result.value=parseInt(n.value)+parseInt(r.value)">
+        <input type="range" id="r" name="r" value="20" /> +
+        <input type="number" id="n" name="n" value="10" /> =
+        <output name="result" for="r n">30</output>
+      </form>
+</body>
+</html>
