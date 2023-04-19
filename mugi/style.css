@@ -80,7 +80,7 @@ border: 4px solid;
     box-shadow: 0 0 1px 1px red;
   }
   input[type=text]:enabled {
-    background:green;
+    background:beige;
   }
   
   input[type=text]:disabled {
@@ -103,4 +103,101 @@ border: 4px solid;
   }
   h6:first-of-type {
     background:#006576;
+  }
+  input:focus {
+    background-color: hotpink;
+
+  }
+  :-webkit-full-screen {
+    background-color:blue;
+  }
+  
+  :-ms-fullscreen {
+    background-color: blue;
+  }
+  
+  :fullscreen {
+    background-color: blue;
+  }
+  a:hover {
+    background-color: brown;
+  }
+  input:in-range {
+    border: 2px solid hotpink;
+  }
+  input:indeterminate {
+    box-shadow: 0 0 1px 1px tomato;
+  }
+  input:invalid {
+    border: 2px solid blueviolet;
+  }
+  p:lang(it) { 
+    background: blueviolet;
+  }
+  p:last-child {
+    background: #ff9736;
+  }
+  p:last-of-type {
+    background: #ff8765
+  }
+  a:link {
+    color:cornflowerblue;
+  }
+  ::marker { 
+    color:cornflowerblue;
+  }
+  :not(p) {
+    color: green;
+  }
+  li:nth-child(2) {
+    background: lightgreen;
+  }
+  
+  :nth-child(3) {
+    background: lightcoral;
+  }
+  li:nth-last-child(2) {
+    background:orchid;
+  }
+  h1:nth-last-of-type(2) {
+    background: red;
+  }
+  pre:only-of-type {
+    background: gray;
+  }
+  pre:only-child {
+    background: plum;
+  }
+  input:optional {
+    background-color: goldenrod;
+  }
+  ::placeholder {
+    color: red;
+  }
+  input:read-only {
+    background-color:#ff9791;
+  }
+  input:read-write {
+    background-color: #8c4769;
+  }
+  input:required {
+    background-color: skyblue;
+  }
+  /*
+  :root {
+    background: pink;
+  }*/
+  ::selection {
+    color: red;
+    background: yellow;
+  }
+  :target {
+    border: 2px solid green;
+    background-color: #ff7752;
+  }
+  input:valid {
+    background-color: #006576;
+  }
+  a:visited {
+    color: pink;
   }

@@ -46,10 +46,62 @@
   </form><br>
   <form>
     First name: <input type="text" value="mugimaa"><br><br>
-    Last name: <input type="text" value="sree"><br><br>
+    Last name: <input type="text" placeholder="sree"><br><br>
     Country: <input type="text" disabled="disabled" value="India">
   </form>
 <p></p>
 <h6>cascading style sheet</h6>
+username:<input type="text" name="t1">
+<button onclick="openFullscreen();">Open Fullscreen</button>
+<button onclick="closeFullscreen();">Close Fullscreen</button>
+<script>
+    var f1 = document.documentElement;
+    function openFullscreen() {
+      if (f1.requestFullscreen) {
+        f1.requestFullscreen();
+      } else if (f1.webkitRequestFullscreen) { 
+        f1.webkitRequestFullscreen();
+      } else if (f1.msRequestFullscreen) { 
+        f1.msRequestFullscreen();
+      }
+    }
+    
+    function closeFullscreen() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { 
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { 
+        document.msExitFullscreen();
+      }
+    }
+    </script>
+    <input type="number" min="5" max="10" value="7">
+    <input type="email" value="mugimaasree@gmail.com">
+    <p lang="it">using cascading style sheet selector</p>
+    <p>last child</p>
+    <ul>
+        <li>red</li>
+        <li>green</li>
+        <li>yellow</li>
+        <li>light green</li>
+        <li>tomato</li>
+      </ul>
+      
+      <ol>
+        <li>blue</li>
+        <li>orange</li>
+        <li>pink</li>
+        <li>voilet</li>
+        <li>gold</li>
+      </ol>
+     <input readonly value="css">
+     <p>cascading style sheet<br><input required></p><br>
+     <a href="#news1">1st link</a><br>
+<a href="#news2">2nd link</a>
+
+<pre id="news1"><b>selector</b></pre>
+<pre id="news2"><b>selector2</b></pre>
+
 </body>
 </html>
