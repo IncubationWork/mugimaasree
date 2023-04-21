@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    /*flex-direction:column-reverse;*/
+    border: 4px solid black;
+    flex-wrap: wrap;
+}
+.c1{
+text-align: center;
+font-size: 20px;
+color:white;
+padding: 16px;
+}
+.box-1{
+    background-color: aquamarine;
+}
+.box-2{
+    background-color: brown;
+}
+.box-3{
+    background-color: cornflowerblue;
+}
+.box-4{
+    background-color: darkblue;
+}
+.box-5{
+    background-color: forestgreen;
+}
+.box-6{
+background-color: goldenrod;
+}
+.box-7{
+    background-color: hotpink;
+}
+.box-8{
+    background-color: indigo;
+}
+.box-9{
+    background-color: midnightblue;
+}
