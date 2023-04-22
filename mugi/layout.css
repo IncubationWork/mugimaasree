@@ -1,0 +1,65 @@
+body{
+    background-color: lightskyblue;
+}
+.box{
+    display:flex;
+    flex-flow:wrap row;
+    text-align: center;
+}
+.box>*{
+    padding: 30px;
+    margin: 30px;
+    flex: 1 100%;
+}
+.c1{
+    background-color: red;
+    flex-basis: 15%;
+}
+.c2{
+    background-color:red;
+    flex-basis: 15%;
+}
+.c3{
+    background-color:red;
+    flex-basis: 15%;
+}
+.c4{
+    background-color:red;
+    flex-basis: 15%;
+}
+.c5{
+    background-color: red;
+    flex-basis: 10%;
+}
+.c6{
+    background-color: goldenrod;
+    flex-basis: 60%;
+}
+.c7{
+    background-color: blue;
+    flex-basis: 34%;
+}
+.c8{
+    background-color: blue;
+    flex-basis: 34%;
+}
+.c9{
+    background-color: green;
+    flex-basis: 24%;
+}
+.c10{
+    background-color: green;
+    flex-basis: 24%;
+}
+.c11{
+    background-color: green;
+    flex-basis: 24%;
+}
+.c12{
+    background-color: green;
+    flex-basis: 20%;
+}
+.c13{
+    background-color: yellow;
+    flex-basis: 54%;
+}

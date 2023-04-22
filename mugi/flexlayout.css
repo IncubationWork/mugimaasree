@@ -1,24 +1,32 @@
-
 body{
     background-color: lightskyblue;
 }
 .c1{
-    display: flex;
-    background-color: aqua;
-    justify-content: center;
+    display:flex;
+    flex-flow: wrap row;
     text-align: center;
 }
 .c1>*{
-    padding: 10px;
-    margin: 10px;
+    padding: 30px;
+    margin: 30px;
     flex: 1 100%;
-    border-radius: 10px;
 }
-.header{
-    background-color: aqua;
-    justify-content: center;
-}
-.nav{
-    background-color: yellowgreen;
-    justify-content: center;
-}
+header{
+    background-color:aqua;
+    }
+nav{
+    background-color:lawngreen;
+    }       
+    .as{
+        background-color: lightgreen;
+    }
+    .main{
+
+        background-color:cornflowerblue;
+    }
+    .sec{
+        background-color: blue;
+    }
+    .footer{
+        background-color: aqua;
+    }

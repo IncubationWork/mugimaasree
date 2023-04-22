@@ -1,0 +1,53 @@
+body{
+    background-color: lightskyblue;
+}
+.fl{
+    display:flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.fl > *{
+    padding: 8px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 8px;
+}
+.header{
+    background-color: red;
+    height: 120px;
+    }
+.footer{
+        background-color: aqua;
+        height: 80px;
+    }
+.flex{
+    text-align: center;
+    background-color: orange;
+    height: 500px;
+    flex-flow: flex-end;
+}
+.aside1{
+    background-color: lightgreen;
+    height: 500px;
+    justify-content: center;
+}
+@media all and (min-width:800px){
+    .flex
+    {
+        flex: 3;
+    }
+    .aside1{
+        order: 1;
+    }
+    .flex{
+        order: 2;
+    }
+    .footer{
+        order: 4;
+    }
+}
+@media all and (min-width:600px){
+    .aside{
+        flex: 1;
+    }
+}
