@@ -1,11 +1,11 @@
 
-.fl{
+.c1{
     display:flex;
     flex-flow:  row wrap;
     text-align: center;
     background-color: lightskyblue;
 }
-.fl *{
+.c1 *{
     margin: 10px;
     border-radius: 8px;
     
