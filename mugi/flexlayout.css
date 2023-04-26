@@ -1,9 +1,15 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .c1{
     display:flex;
     flex-flow:  row wrap;
     text-align: center;
     background-color: lightskyblue;
+    height: 100vh;
+    width: 100vw;
 }
 .c1 *{
     margin: 10px;

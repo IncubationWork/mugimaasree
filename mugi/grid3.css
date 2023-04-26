@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.container{
+    background-color: rgb(248, 244, 244);
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    gap:10px;
+    font-size: 40px;
+
+}
+.c1{
+    background-color: brown;
+    grid-column: 1 /span 2;
+}
+.c2{
+background-color: black;
+}
+.c3{
+background-color:lawngreen;
+}
+.c4{
+background-color: blue;
+}
+.c5{
+background-color: red;
+}
+.c6{
+background-color: rgb(244, 182, 182);
+}
+.c7{
+background-color:rgb(244, 182, 182) ;
+}
+.c8{
+background-color: rgb(244, 182, 182);
+}
+.c9{
+background-color: red;
+}
+.c10{
+background-color: rgb(244, 182, 182);
+}
+.c11{
+background-color: goldenrod;
+}
