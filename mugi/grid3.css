@@ -1,50 +1,82 @@
 *{
-    margin: 0;
-    padding:0;
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
+    color: white;
+    background: #fdfddd;
     font-family: Arial;
 }
-.container{
-    background-color: rgb(248, 244, 244);
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    color: white;
-    gap:10px;
-    font-size: 40px;
 
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        'feature feature feature header header header header'
+        'side product product product product product f2'
+        'side product product product product product ..'
+        'side b1 . . . b3 f3'
+        'side . b2 b2 . . b4'
+        'side footer footer footer footer footer footer'
+    ;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr;
+    gap: 10px;
+    border: 10px solid #fff7f4;
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(247, 246, 239);
 }
-.c1{
-    background-color: brown;
-    grid-column: 1 /span 2;
+.feature{
+    grid-area: feature;
+    background: rgb(149, 32, 32);
 }
-.c2{
-background-color: black;
+
+.header{
+    grid-area: header;
+    background: black;
 }
-.c3{
-background-color:lawngreen;
+
+.side{
+    grid-area: side;
+    background: lawngreen
 }
-.c4{
-background-color: blue;
+
+.product{
+    grid-area: product;
+    background: rgb(6, 6, 77);
 }
-.c5{
-background-color: red;
+
+.f2{
+    grid-area: f2;
+    background:rgb(147, 40, 40);
 }
-.c6{
-background-color: rgb(244, 182, 182);
+
+.f3{
+    grid-area: f3;
+    background: rgb(147, 40, 40);
 }
-.c7{
-background-color:rgb(244, 182, 182) ;
+
+.b1{
+    grid-area: b1;
+    background: rgb(239, 192, 192)
 }
-.c8{
-background-color: rgb(244, 182, 182);
+
+.b2{
+    grid-area: b2;
+    background: rgb(239, 192, 192)
 }
-.c9{
-background-color: red;
+
+.b3{
+    grid-area: b3;
+    background: rgb(239, 192, 192)
 }
-.c10{
-background-color: rgb(244, 182, 182);
+
+.b4{
+    grid-area: b4;
+    background: rgb(239, 192, 192)
 }
-.c11{
-background-color: goldenrod;
+
+.footer{
+    grid-area: footer;
+    background: goldenrod
 }
