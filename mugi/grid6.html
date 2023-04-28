@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid6-layout</title>
+    <style>
+        *{
+             margin:0;
+             padding: 0;
+             box-sizing: border-box;
+             color: #2a37c7;
+             font-family: Arial;
+        
+        }
+        .container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap:10px;
+            font-size:40px;
+            border: 5px solid white;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            padding: 20px;
+         }
+        .con{
+            display: grid;
+             text-align: center;
+        }
+        .container1{
+            grid-template-columns: 1fr;
+         }
+        .box1{
+            background-color: grey;
+            grid-column: 1;
+            grid-row: 1;
+         }
+     .container2{
+    grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+  .box2{
+    background-color: grey;
+     grid-column: 1;
+    grid-row: 1;
+  }
+
+  .box3{
+    background-color: grey;
+    grid-column: 2;
+    grid-row: 1;
+  }
+.container3{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+  .box4{
+    background-color: grey;
+    grid-column: 1;
+    grid-row: 1;
+  }
+ .box5{
+    background-color: grey;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .box6{
+    background-color: grey;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .container4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 6px;
+  }
+
+  .box7{
+    background-color: grey;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .box8{
+    
+    background-color: grey;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .box9{
+    background-color: grey;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .box10{
+    background-color: grey;
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .container5{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 7px;
+  }
+
+  .box11{
+    background-color: grey;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .box12{
+    background-color: grey;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .box13{
+    background-color: grey;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .box14{
+    background-color: grey;
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .box15{
+    background-color: grey;
+    grid-column: 5;
+    grid-row: 1;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="con container1">
+        <div class="box1">940px</div></div>
+        <div class="con container2">
+        <div class="box2">460px</div>
+        <div class="box3">460px</div></div>
+        <div class="con container3">
+        <div class="box4">300px</div>
+        <div class="box5">300px</div>
+        <div class="box6">300px</div></div>
+        <div class="con container4">
+        <div class="box7">220px</div>
+        <div class="box8">220px</div>
+        <div class="box9">220px</div>
+        <div class="box10">220px</div></div>
+        <div class="con container5">
+        <div class="box11">172px</div>
+        <div class="box12">172px</div>
+        <div class="box13">172px</div>
+        <div class="box14">172px</div>
+        <div class="box15">172px</div>
+        </div>
+
+    </div>
+</body>
+</html>
