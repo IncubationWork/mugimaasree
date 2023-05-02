@@ -5,70 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout8</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing:border-box;
-        }
-        .container{
-            display: grid;
-            height: 100vh;
-            width:100vw;
-            gap: 10px;
-            border: 4px solid white;
-            grid-template-columns: 0.5fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 4fr 3fr 2fr;
-            grid-template-areas: 'nav nav nav nav'
-                                'side main main main'
-                                'side con con2 con3'
-                                'side footer footer footer';
-        }
-        .nav{
-            background-color: aquamarine;
-            grid-area: nav;
-        }
-        .side{
-            background-color: rgb(64, 239, 239);
-            grid-area: side;
-        }
-        .main{
-            background-color: rgb(101, 210, 247);
-            grid-area: main;
-        }
-        .con{
-            background-color: rgb(143, 247, 212);
-            grid-area: con;
-        }
-        .con2{
-            background-color: rgb(93, 243, 193);
-            grid-area: con2;
-        }
-        .con3{
-            background-color: rgb(52, 236, 175);
-            grid-area: con3;
-        }
-        .footer{
-            background-color:rgb(160, 242, 160);
-            grid-area: footer;
-        }
-        @media(max-width:720px){
-          .container{
-            height: 100vh;
-            width:100vw;
-             grid-template-columns:1fr;
-             grid-template-rows: 1fr 1fr 3fr 2fr 2fr 2fr 2fr;
-            grid-template-areas: 'nav'
-                                'side'
-                                'main'
-                                'con' 
-                                'con2' 
-                                'con3'
-                                 'footer';
-        }
-    }
-
-    </style>
+    <link rel="stylesheet" href="grid8.css">
+    
 </head>
 <body>
     <div class="container">
