@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+
 }
 .container{
     display: grid;
@@ -10,6 +11,7 @@
     grid-template-columns:repeat(12 1fr);
     grid-template-rows: repeat(11 1fr);
     justify-content: space-around;
+
 }
 .box{
     background-color: rgb(250, 183, 216);
@@ -190,6 +192,7 @@ border-radius: 10px;
 background: #000;
 margin-top: -3px;
 }
+
 .item{
 height: 4px;
 background-color: blue;
