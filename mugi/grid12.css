@@ -1,0 +1,990 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+        height: 100vh;
+        width: 50vw;
+        position: relative;
+        left: 25%;
+        border-radius: 5px;
+        display: grid;
+        gap:20px;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr; 
+    
+    }
+    .layout1{
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column: 1;
+        grid-row: 2;
+        gap: 2px;
+    }
+    .child1{
+        border: 2px solid black;
+        background: black;
+        grid-column:1;
+        grid-row:1/3;
+    }
+    
+    .child2{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    .child3{
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    .h1{
+        text-align: center;
+        grid-row: 3;
+        grid-column: 1;
+    
+    }
+    
+    .layout2{
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column: 2;
+        grid-row: 2;
+        gap: 2px;
+    }
+    .child4{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:1 ;
+    
+    }
+    
+    .child5{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column: 1;
+        
+    }
+    
+    .child6{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1/3;
+        grid-column: 2;
+    }
+    
+    .h2{
+        text-align: center;
+        grid-row: 3;
+        grid-column: 2;
+        
+    }
+    
+    .layout3{
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        grid-column: 3;
+        grid-row: 2;
+        gap: 2px;
+    }
+    .child7{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column: 1;
+        
+    }
+    
+    .child8{
+
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column: 2;
+    
+    }
+    
+    .child9{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+    
+    .h3{
+        text-align: center;
+        grid-row: 3;
+        grid-column: 3;
+    }
+    
+    .layout4{
+        height: 35%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-row: 2;
+        grid-column: 4;
+        position: relative;
+        top: 25%;
+        gap: 2px;
+    }
+    
+    .child10{
+        border: 2px solid black;
+        background: black;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .child11{
+        border: 2px solid black;
+        background: black;
+        grid-column: 2;
+        grid-row: 1;
+        
+    }
+    
+    .h4{
+        text-align: center;
+        grid-row: 3;
+        grid-column: 4;
+    }
+    
+    .layout5{
+        height: 35%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row: 4;
+        grid-column: 1;
+        position: relative;
+        top: 25%;
+        gap: 2px;
+    }
+    
+    .child12{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column: 1;
+        
+    }
+    
+    .child13{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column: 2;
+        
+    }
+    
+    .h5{
+        text-align: center;
+        grid-row: 5;
+        grid-column: 1;
+        
+    }
+    
+    .layout6{
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column: 2;
+        grid-row: 4;
+        gap: 2px;
+    }
+    
+    .child14{
+    
+        border: 2px solid black;
+        background: black;
+        grid-column: 1/3;
+        grid-row: 1;
+        
+    }
+    
+    .child15{
+
+        border: 2px solid black;
+        background: black;
+        grid-column: 3;
+        grid-row: 1;
+        
+    }
+    
+    .child16{
+        
+        border: 2px solid black;
+        background: black;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .child17{
+
+        border: 2px solid black;
+        background: black;
+        grid-column:2/4;
+        grid-row: 2;
+        
+    }
+    
+    .h6{
+        text-align: center;
+        grid-row: 5;
+        grid-column: 2;
+    }
+    
+    .layout7{
+        height: 75%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row: 4;
+        grid-column: 3;
+        position: relative;
+        top: 10%;
+        gap: 2px;
+    }
+    
+    .child18{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:1;
+        
+    }
+    
+    .child19{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column:1 ;
+        
+    }
+    
+    .child20{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: 1/3;
+        grid-column:2 ;
+    }
+    
+    .h7{
+        text-align: center;
+        grid-row: 5;
+        grid-column: 3;
+        
+    }
+    
+    .layout8{
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row: 4;
+        grid-column: 4;
+        gap: 2px;
+    }
+    
+    .child21{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: 1/4;
+        grid-column:1 ;
+        
+    }
+    
+    .child22{
+
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:2/4;
+    }
+    
+    .child23{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column:2/4 ;
+        
+    }
+    
+    .child24{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: 3;
+        grid-column: 2;
+        
+    }
+    
+    .child25{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 3;
+        grid-column:3 ;
+        
+    }
+    
+    .h8{
+        text-align: center;
+        grid-row: 5;
+        grid-column: 4;
+    }
+    
+    .layout9{
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row: 6;
+        grid-column: 1;
+        gap: 2px;
+    }
+    
+    .child26{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1/5;
+        grid-column:1 ;
+        
+    }
+    
+    .child27{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:2;
+        
+    }
+    
+    .child28{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column:2 ;
+    }
+    
+    .child29{
+
+        border: 2px solid black;
+        background: black;
+        grid-row: 3;
+        grid-column: 2;
+    }
+    
+    .child30{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 4;
+        grid-column:4 ;
+        
+    }
+    
+    .h9{
+        text-align: center;
+        grid-row: 7;
+        grid-column: 1;
+    }
+    
+    .layout10{
+        height: 75%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row: 6;
+        grid-column:2 ;
+        position: relative;
+        top: 10%;
+        gap: 1px;
+    }
+    
+    .child31{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:1 ;
+        
+    }
+    
+    .child32{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:2 ;
+        
+    }
+    
+    .h10{
+        text-align: center;
+        grid-row: 7;
+        grid-column: 2;
+    }
+    
+    .layout11{
+        height: 75%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row: 6;
+        grid-column:3 ;
+        position: relative;
+        top: 10%;
+        gap: 1px;
+    }
+    
+    .child33{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1/4;
+        grid-column: 1;
+    }
+    
+    .child34{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:2 ;
+        
+    }
+    .child35{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:3 ;
+        
+    }
+    
+    .child36{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column:2 ;
+        
+    }
+    .child37{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 3;
+        grid-column:3 ;
+        
+    }
+    
+    .h11{
+        text-align: center;
+        grid-row: 7;
+        grid-column: 3;
+    }
+    
+    .layout12{
+        height: 45%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row: 6;
+        grid-column: 4;
+        position: relative;
+        top: 25%;
+        gap: 1px;
+    }
+    
+    .child38{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .child39{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:2 ;
+    }
+    .child40{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:3 ;
+    }
+    
+    .h12{
+        text-align: center;
+        grid-row: 7;
+        grid-column: 4;
+    }    
+    
+    .layout13{
+        width: 35%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row: 8;
+        grid-column: 1;
+        position: relative;
+        left: 25%;
+        gap: 1px;
+    }
+    
+    .child41{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:1 ;
+    }
+    
+    .child42{
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:2 ;
+    }
+    .child43{
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column:1 ;
+    }
+    
+    .child44{
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column:2 ;
+        
+    }
+    
+    .h13{
+        text-align: center;
+        grid-row: 9;
+        grid-column: 1;
+    } 
+    
+    
+    .layout14{
+        height: 45%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row: 8;
+        grid-column:2 ;
+        position: relative;
+        top: 25%;
+        gap: 1px;
+    }
+    
+    .child45{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:1 ;
+    
+    }
+    
+    .child46{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:2 ;
+        
+    }
+    
+    .h14{
+        text-align: center;
+        grid-row: 9;
+        grid-column: 2;
+    } 
+    
+    .layout15{
+        height: 35%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row:8 ;
+        grid-column:3 ;
+        position: relative;
+        top: 30%;
+        gap: 1px;
+    }
+    
+    .child47{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:1 ;
+        
+    }
+    
+    .child48{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:2 ;
+        
+    }
+    .child49{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row:1 ;
+        grid-column:3 ;
+        
+    }
+    
+    
+    .h15{
+        text-align: center;
+        grid-row: 9;
+        grid-column: 3;
+    } 
+    
+    .layout16{
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-row: 8;
+        grid-column: 4;
+        gap: 1px;
+    }
+    
+    .child50{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 1;
+        grid-column:1 ;
+        
+    }
+    
+    .child51{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: 2;
+        grid-column:1 ;
+        
+    }
+    .child52{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: 3;
+        grid-column:1 ;
+        
+    }
+    
+    
+    .h16{
+        text-align: center;
+        grid-row: 9;
+        grid-column: 4;
+        
+    } 
+    .layout17{
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row: ;
+        grid-column: ;
+        gap: 1px;
+    }
+    .child53{
+
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    
+    .child54{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+    
+    }
+    
+    .child55{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    
+    .h17{
+        text-align: center;
+        grid-row: 11;
+        grid-column: 1;
+        
+    }
+    
+    .layout18{
+        height: 35%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row: ;
+        grid-column: ;
+        position: relative;
+        top: 25%;
+        gap: 2px;
+    }
+    .child56{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    
+    .child57{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+
+    }
+    
+    .child58{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    .child59{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    
+    .h18{
+        text-align: center;
+        grid-row: 11;
+        grid-column: 2;
+        
+    }
+    
+    .layout19{
+        height: 45%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-row: ;
+        grid-column: ;
+        gap: 1px;
+        position: relative;
+        top: 20%;
+    }
+    .child60{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    
+    .child61{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    
+    .child62{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    .child63{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    .child64{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+    
+    }
+    
+    .h19{
+        text-align: center;
+        grid-row: 11;
+        grid-column: 3;
+        grid-row: ;
+        grid-column: ;
+    }
+    
+    .layout20{
+        height: 65%;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row: ;
+        grid-column: ;
+        position: relative;
+        top: 15%;
+        gap: 1px;
+    }
+    
+    .child65{
+
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+    
+    }
+    
+    .child66{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    .child67{
+        
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    
+    .child68{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+        
+    }
+    .child69{
+    
+        border: 2px solid black;
+        background: black;
+        grid-row: ;
+        grid-column: ;
+    }
+    
+    .h20{
+        text-align: center;
+        grid-row: 11;
+        grid-column: 4;
+    }
+    
