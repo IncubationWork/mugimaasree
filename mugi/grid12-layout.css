@@ -4,21 +4,18 @@
     box-sizing: border-box;
 }
 .container{
+        display: grid;  
         height: 100vh;
         width: 50vw;
+        border: 2px solid white;
         position: relative;
         left: 25%;
-        border-radius: 5px;
-        display: grid;
         gap:20px;
         grid-template-columns:repeat(4,1fr);
         grid-template-rows: 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr; 
     
     }
     .layout1{
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 0.5fr;
         grid-template-rows: 1fr 1fr;
@@ -55,9 +52,6 @@
     }
     
     .layout2{
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -97,9 +91,6 @@
     }
     
     .layout3{
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 1fr;
@@ -140,10 +131,6 @@
     }
     
     .layout4{
-        height: 35%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
@@ -151,6 +138,7 @@
         grid-column: 4;
         position: relative;
         top: 25%;
+        height: 60%;
         gap: 2px;
     }
     
@@ -176,10 +164,6 @@
     }
     
     .layout5{
-        height: 35%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
@@ -187,6 +171,7 @@
         grid-column: 1;
         position: relative;
         top: 25%;
+        height: 60%;
         gap: 2px;
     }
     
@@ -216,9 +201,6 @@
     }
     
     .layout6{
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -269,17 +251,11 @@
     }
     
     .layout7{
-        height: 75%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-row: 4;
         grid-column: 3;
-        position: relative;
-        top: 10%;
         gap: 2px;
     }
     
@@ -316,9 +292,6 @@
     }
     
     .layout8{
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 0.5fr 0.5fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -378,9 +351,6 @@
     }
     
     .layout9{
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -392,7 +362,7 @@
     .child26{
         border: 2px solid black;
         background: black;
-        grid-row: 1/5;
+        grid-row:1/5;
         grid-column:1 ;
         
     }
@@ -427,7 +397,7 @@
         border: 2px solid black;
         background: black;
         grid-row: 4;
-        grid-column:4 ;
+        grid-column:2 ;
         
     }
     
@@ -438,17 +408,11 @@
     }
     
     .layout10{
-        height: 75%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-row: 6;
         grid-column:2 ;
-        position: relative;
-        top: 10%;
         gap: 1px;
     }
     
@@ -475,24 +439,18 @@
     }
     
     .layout11{
-        height: 75%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-row: 6;
         grid-column:3 ;
-        position: relative;
-        top: 10%;
-        gap: 1px;
+        gap: 2px;
     }
     
     .child33{
         border: 2px solid black;
         background: black;
-        grid-row: 1/4;
+        grid-row: 1/3;
         grid-column: 1;
     }
     
@@ -525,7 +483,7 @@
         
         border: 2px solid black;
         background: black;
-        grid-row: 3;
+        grid-row: 2;
         grid-column:3 ;
         
     }
@@ -537,37 +495,34 @@
     }
     
     .layout12{
-        height: 45%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-row: 6;
         grid-column: 4;
         position: relative;
         top: 25%;
-        gap: 1px;
+        height: 60%;
+        gap: 2px;
     }
     
     .child38{
         border: 2px solid black;
         background: black;
-        grid-row: 1;
+        grid-row: 1/4;
         grid-column: 1;
     }
     
     .child39{
         border: 2px solid black;
         background: black;
-        grid-row: 1;
+        grid-row: 1/4;
         grid-column:2 ;
     }
     .child40{
         border: 2px solid black;
         background: black;
-        grid-row: 1;
+        grid-row: 1/4;
         grid-column:3 ;
     }
     
@@ -578,10 +533,6 @@
     }    
     
     .layout13{
-        width: 35%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -589,7 +540,8 @@
         grid-column: 1;
         position: relative;
         left: 25%;
-        gap: 1px;
+        width:40%;
+        gap: 2px;
     }
     
     .child41{
@@ -628,18 +580,15 @@
     
     
     .layout14{
-        height: 45%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-row: 8;
         grid-column:2 ;
         position: relative;
+        height: 60%;
         top: 25%;
-        gap: 1px;
+        gap: 2px;
     }
     
     .child45{
@@ -667,10 +616,6 @@
     } 
     
     .layout15{
-        height: 35%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr;
@@ -678,7 +623,8 @@
         grid-column:3 ;
         position: relative;
         top: 30%;
-        gap: 1px;
+        height: 50%;
+        gap: 2px;
     }
     
     .child47{
@@ -715,15 +661,12 @@
     } 
     
     .layout16{
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
         grid-row: 8;
         grid-column: 4;
-        gap: 1px;
+        gap: 2px;
     }
     
     .child50{
@@ -760,22 +703,19 @@
         
     } 
     .layout17{
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-row: ;
-        grid-column: ;
-        gap: 1px;
+        grid-template-rows: 2fr;
+        grid-row: 10;
+        grid-column:1 ;
+        gap: 2px;
     }
     .child53{
 
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:1 ;
         
     }
     
@@ -783,8 +723,8 @@
         
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:2 ;
     
     }
     
@@ -792,8 +732,8 @@
         
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:3 ;
         
     }
     
@@ -805,25 +745,22 @@
     }
     
     .layout18{
-        height: 35%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 10;
+        grid-column:2 ;
         position: relative;
         top: 25%;
+        height: 60%;
         gap: 2px;
     }
     .child56{
     
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:1 ;
         
     }
     
@@ -831,8 +768,8 @@
         
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:2 ;
 
     }
     
@@ -840,16 +777,16 @@
         
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:3 ;
         
     }
     .child59{
     
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column: 4;
         
     }
     
@@ -861,25 +798,22 @@
     }
     
     .layout19{
-        height: 45%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-row: ;
-        grid-column: ;
-        gap: 1px;
+        grid-row: 10;
+        grid-column: 3;
+        gap: 2px;
         position: relative;
+        height: 80%;
         top: 20%;
     }
     .child60{
     
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:1 ;
         
     }
     
@@ -887,8 +821,8 @@
         
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:2 ;
         
     }
     
@@ -896,24 +830,24 @@
     
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:3 ;
         
     }
     .child63{
         
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column: 4;
         
     }
     .child64{
     
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:5 ;
     
     }
     
@@ -921,31 +855,23 @@
         text-align: center;
         grid-row: 11;
         grid-column: 3;
-        grid-row: ;
-        grid-column: ;
     }
     
     .layout20{
-        height: 65%;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-row: ;
-        grid-column: ;
-        position: relative;
-        top: 15%;
-        gap: 1px;
+        grid-row: 10;
+        grid-column: 4;
+        gap: 2px;
     }
     
     .child65{
 
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column: 1;
     
     }
     
@@ -953,16 +879,16 @@
         
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1/3;
+        grid-column: 2;
         
     }
     .child67{
         
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 1;
+        grid-column:3 ;
         
     }
     
@@ -970,16 +896,16 @@
     
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 2;
+        grid-column:1;
         
     }
     .child69{
     
         border: 2px solid black;
         background: black;
-        grid-row: ;
-        grid-column: ;
+        grid-row: 2;
+        grid-column:3;
     }
     
     .h20{
