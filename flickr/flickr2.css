@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background-color:rgb(223, 218, 218);
+}
 .container{
     display:flex;
     height: 100vh;
@@ -15,7 +18,7 @@ header{
     width: 100vw;
     height: 7vh;
     background-color: black;
-    
+
 }
 .img1
 {
@@ -50,7 +53,7 @@ height: 48px;
      position: relative;
      top: 12%;
      left:8%;
-     
+
 }
 header ul li {
     list-style: none;
@@ -111,7 +114,7 @@ left: 46%;
 top:28%;
 }
 img{
-position: relative;
+position:relative;
 border-radius: 15px;
 height: 30px;
 top:23%;
@@ -122,9 +125,9 @@ left:47%;
 form{
     display:flex;
     align-self: center;
-    position: absolute;
-    right:20%;
-    
+    position: relative;
+    left:50%;
+
 }
 .search-icon{
     background-color: transparent;
@@ -142,7 +145,7 @@ form{
     position:absolute;
     left:-79%;
     z-index:1;
-    
+
 
 }
 .search-icon:focus{
@@ -175,4 +178,30 @@ form{
 	-moz-transition-duration: 0.4s;
 	-webkit-transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
+}
+.navi{
+    display:flex;
+    width: 100vw;
+    height: 11vh;
+    background-color:white;
+    color: black;
+    position:absolute;
+    left:0%;
+    top:7%;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    position:relative;
+    left:90%;
+   top: 15%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.a1, nav ul li:hover{
+    border-bottom: 4px solid blue;
 }
