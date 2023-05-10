@@ -1,4 +1,4 @@
-/**{
+*{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -7,7 +7,8 @@
 body{
     width:100vw;
     height:100vh;
-    }
+    background-color: rgb(245, 244, 244);
+}
 header{
     width:100vw;
     height:5.3vh;
@@ -18,10 +19,10 @@ header{
     transform: scaleX(1);
     transform: scaleY(1);
 }
-.lo1{
+#logo{
     display: flex;
 }
-.lo1:hover{
+#logo:hover{
     cursor:pointer;
     opacity: 0.8;
 }
@@ -63,8 +64,8 @@ header{
     display: flex;
 
 }
-ul{
-    display:flex;
+.menu ul{
+    display:inline-flex;
     list-style-type: none;
     align-content: center;
     position:absolute;
@@ -74,14 +75,53 @@ ul{
     color:white;   
     
 }
-ul li{
+.menu ul li{
+    display:block;
     padding-left:18px;
     padding-right:13px;
 }
-ul li:hover{
+.menu ul li:hover{
     cursor:pointer;
     color:rgb(156, 153, 153);
 }
+.sub-menu-1{
+    display:none;
+}
+.menu ul li:hover .sub-menu-1{
+    display:block;
+    position:absolute; 
+    margin-top: -13px;
+    margin-left:-315px;
+}
+.menu ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:10px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border:1px solid rgba(128, 128, 128, 0.37);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.15);
+}
+.menu ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding:2px;
+    margin:5px;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .sub-menu-1 ul li:hover{
+    background-color:rgba(0,0,0,0.042); 
+}
+.menu .sub-menu-1::before{
+    content:'';
+    position:absolute;
+    top:21px;
+    left:21em;
+    width:15px;
+    height: 15px;
+    background:rgba(255, 255, 255,0.5);
+    transform: rotate(45deg);
+}
+
 form{
     display:flex;
     align-self: center;
@@ -164,85 +204,48 @@ form{
     right:15em;
 }
 .img5{
-    background-image: url(image.png);
+    background-image: url(image1.png);
     position: absolute;
     right:11em;
     border-radius: 100%;
     place-self: center;
     transform: scale(0.7);
-
-}*/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
 }
-body{
-    background-image: url(bgimg.jpg);
-    background-size: cover;
-    font-family: sans-serif;
+.navi ul{
     
-}
-.menu{
-    background-color: rgba(162, 160, 160, 0.778);
-    text-align: center;
-    
-}
-.menu ul{
     display:inline-flex;
-    list-style-type: none;
-    color:white;
- }
-.menu ul li{
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
-}
-.menu ul li a{
-    text-decoration: none;
-    color:white;
-}
-.active, .menu ul li:hover{
-    background-color: rgba(232, 156, 225, 0.5);
-    border-radius: 3px;
-
-}
-.sub-menu-1{
-    display:none;
-}
-.menu ul li:hover .sub-menu-1{
-    display:block;
-    position: absolute;
-    background-color: blueviolet;
-    margin-top:15px;
-    margin-left: -15px;
-} 
-.menu ul li:hover .sub-menu-1 ul{
-    display:block;
-    margin:10px;
-}
-.menu ul li:hover .sub-menu-1 ul li{
-    width:150px;
-    padding:10px;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
-}
-.menu ul li:hover .sub-menu-1 ul li:nth-last-child(3){
-    border-bottom:1px solid white;
-}
-.menu ul li:hover .sub-menu-1 ul li:hover{
-    background-color:pink; 
-}
-.menu .sub-menu-1::before{
-    content:'';
+    align-items: center;
+    width:80vw;
+    height:5vh;
+    margin:auto;
     position:absolute;
-    top:-5px;
-    left:28px;
-    width:20px;
-    height: 20px;
-    background:blueviolet;
-    transform: rotate(45deg);
-     
+    left:12em;
+    border-bottom:2px solid rgba(128, 128, 128, 0.357);
+    gap:20px;
+}
+.navi{
+    display:flex;
+    width: 100vw;
+    height: 11vh;
+    background-color:white;
+    color: black;
+    position:absolute;
+    left:0%;
+    top:5%;
     
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    position:relative;
+    left:8%;
+   top: 15%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.a1, nav ul li:hover{
+    border-bottom: 4px solid blue;
 }
