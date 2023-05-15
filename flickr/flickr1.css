@@ -7,7 +7,9 @@
 body{
     height: 100vh;
     width:100vw;
-    background-color: rgb(235, 239, 239);
+    background: rgb(212, 209, 209);
+    
+
 }
 header{
     display: flex;
@@ -15,7 +17,9 @@ header{
     height: 6vh;
     width: 100vw;
     margin: auto;
-    position: relative;
+    position:sticky;
+    top: 0;
+    z-index: 80;
 }
 .flickr{
     display: flex;
@@ -61,10 +65,10 @@ header{
 .option ul{
     display: inline-flex;
     color: white;
-    list-style: none;
-    align-self:center;
+    list-style-type: none;
+    align-content:center;
     position: absolute;
-    left:18%;
+    left:18%;  
 }
 .option ul li{
     display: block;
@@ -74,6 +78,46 @@ header{
     cursor: pointer;
     color: rgb(235, 232, 232);
     opacity: 0.8;
+}
+.option-1{
+    display: none;
+    visibility: hidden;
+}
+.option ul li:hover .option-1{
+    display:block;
+    visibility: visible;
+    display: block;
+    position:absolute; 
+    margin-top: -5px;
+    margin-left:-3px;
+}
+.option ul li:hover .option-1 ul{
+    display:block;
+    margin:10px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border:1px solid rgba(128, 128, 128, 0.37);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.15);
+}
+.option ul li:hover .option-1 ul li{
+    width:150px;
+    padding:2px;
+    margin:5px;
+    border-radius: 0;
+    text-align: left;
+}
+.option ul li:hover .option-1 ul li:hover{
+    background-color:rgba(0,0,0,0.042); 
+}
+.option .option-1::before{
+    content:'';
+    position:absolute;
+    top:21px;
+    left:21em;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg);
 }
 form{
     display: flex;
@@ -132,6 +176,40 @@ place-self:center;
 position: absolute;
 left:81%;
 }
+.image3 .tooltip{
+    visibility: hidden;
+    width:40px;
+    background-color: white;
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.image3:hover .tooltip {
+    visibility: visible;
+    opacity:1 
+  }
+  .image3:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
 .image4{
     background-image: url(image.png);
     background-position: -491px -417px; 
@@ -159,6 +237,9 @@ nav{
     width: 100vw;
     height:10vh;
     border-bottom: 3px solid rgba(234, 231, 231, 0.357);
+    
+    
+    
 }
 .nav1 ul{
     display: inline-flex;
@@ -167,6 +248,7 @@ nav{
     height:5vh;
     margin:auto;
     position:relative;
+    flex-direction: row;
     left:11%;
     border-bottom:2px solid rgba(148, 147, 147, 0.357);
     gap:20px;
@@ -280,8 +362,8 @@ nav{
     cursor: pointer;
 }
 .colorbox11{
-    background-color: violet;
-    border: 1px solid violet;
+    background-color: rgb(162, 73, 162);
+    border: 1px solid rgb(159, 68, 159);
     border-radius:4px;
     height: 25px;
     width: 25px;
@@ -374,18 +456,332 @@ nav{
         top:12.2%;
         cursor: pointer;
     }
-    .main-content{
-        display: flex;
-        height:80vh;
-        width:80vw;
-    }
-    .container1{
-        display: flex;
-        height:80vh;
-        width:60vw;
-    }
-    .container2{
-        display: flex;
-        height:80vh;
-        width: 20vw;
-    }
+    .container
+    {   
+    display: flex;
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    gap:10px;
+    background: rgb(212, 209, 209);
+
+}
+.con
+{
+    width:63vw;
+    height:82vh;
+    margin-left:-18%;
+}
+
+.container1
+{   display: flex;
+    width:63vw;
+    height:4vh;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.menu
+{   display:flex;
+    width:20vw;
+    height:4vh;
+    justify-content: space-evenly;
+    
+}
+.menu1
+{
+    display:flex;
+    font-size:14px;
+    padding-top: 5px;
+    color:rgba(0, 0, 0, 0.519);
+}
+.image6
+{
+    background-image:url(image.png);
+    background-position: -526px -93px; 
+    width: 14px;
+    height: 7px;
+    transform: scale(1.2);
+    position: relative;
+    left:-24px;
+    top:10px;
+}
+
+
+.menu2
+{
+    font-size: 14px;
+    padding-top: 5px;
+    color:rgba(0, 0, 0, 0.519);
+}
+.image7
+{
+    background-image:url(image.png);
+    background-position: -524px -107px; 
+   width: 15px;
+   height: 6px;
+   position: relative;
+   left:-20px;
+   top:10px;
+    transform: scale(1.2);
+}
+.menu-1
+
+{   display:flex;
+    width:25vw;
+    height:4vh;
+    justify-content: space-evenly;
+
+}
+.image8
+{
+    background-image: url(image.png);
+    background-position: -492px -443px; 
+    width: 30px;
+    height: 21px;
+    position: relative;
+    left:15px;
+    top:5px;
+    transform: scale(.9);
+    
+}
+.menu3
+{
+    font-size: 14px;
+    padding-top:7px;
+    padding-left:-10px;
+    color:rgba(0, 0, 0, 0.519);
+}
+.menu4
+{
+    font-size: 14px;
+    padding-top: 6px;
+    color:rgba(0, 0, 0, 0.519);
+}
+.image9
+{
+    background-image: url(image.png);
+    background-position: -524px -107px; 
+    width: 15px;
+    height: 6px;
+    position: relative;
+    left:-24px;
+    top:10px;
+    transform: scale(1.2);
+}
+.image10
+{
+    background-image: url(image.png);
+    background-position: -221px -511px; 
+    width: 16px;
+    height: 17px;
+    margin-top:8px;
+}
+.image11
+{
+    background-image: url(image.png);
+    background-position: -189px -475px; 
+    width: 19px;
+    height: 18px;
+    margin-top:8px;
+}
+.image12
+{
+    background-image: url(image.png);
+    background-position: -226px -475px; 
+    width: 19px;
+    height: 19px;
+    margin-top: 8px;
+}
+.container2
+{   display: flex;
+    width:63vw;
+    height:3vh;
+    flex-direction: row;
+    
+    
+}
+.c1
+{
+    display: flex;
+    width:20vw;
+    height:4vh;
+    justify-content:space-evenly;
+    align-self: center;
+    justify-content: start;
+    margin-top:5px;
+
+}
+.c2{
+    display:flex;
+width:35%;
+height:3vh;  
+justify-content: space-evenly;
+margin-left:33%;    
+}
+a{
+text-decoration:none;
+color:rgb(30, 100, 128)
+}
+a:hover{
+text-decoration: underline;
+color:rgb(30, 100, 128);
+}
+.as{
+   text-decoration:none;
+   margin-top:-100px;
+   margin-left:35%;
+   gap: 10px;
+  color:rgb(30, 100, 128);
+}
+.as:hover{
+    text-decoration: underline;
+    color:rgb(30,100,128);
+}
+.as2{
+    display:flex;
+    width:100%;
+    height:3vh;
+    justify-content:space-between;
+ }
+.b1{
+ width:40%;
+ height:3vh;
+  }
+.view{
+    display:flex;
+    width:40%;
+    height:3vh;
+    justify-content:end;
+  }
+  strong{
+    background-color:rgb(223, 191, 10);
+    color: white;
+  }
+  .viem:hover{
+    text-decoration: underline;
+    color:rgb(30,100,128);
+  }
+  .as3{
+    display:flex;
+    width:100%;
+    height:3vh;
+    justify-content:space-between;
+ }
+ .imgg{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left:87.3%;
+    top:-150px;
+ }
+ .text{
+    width:100%;
+    height:100%;
+    position:relative;  
+    top:-102%;
+    top:-100%;
+    left:0%;
+
+    
+ }
+ .text p{
+    position: absolute;
+    top:40%;
+    left: 15%;
+ }
+ .container3
+{   
+    width:20vw;
+    height:80vh;
+    position: relative;
+    left:109%;
+    margin-top:-215%;
+    
+}
+.con1 
+{
+    display: flex;
+    width:99%;
+    height:20vh;
+    background-color: rgba(255, 255, 255, 0.953);
+    margin-bottom: 10px;
+}
+.rels
+{
+    display:flex;
+    width:20vw;
+    height:4vh;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+    text-align: left;
+
+}
+.search
+{   
+    width:20vw;
+    height:22vh;
+    margin-top:22px;
+    padding-top: 30px;
+    margin-left:-99.9%;
+
+}
+.line
+{
+    font-size: 20px;
+    padding-inline: 10px;
+    color:rgba(0, 0, 0, 0.693);
+    background:rgba(179, 178, 178, 0.515);
+}
+
+.line:hover
+{
+    color:white;
+    background: gray;
+    transition:0.4s;
+
+}
+.line1
+{
+    display:flex;
+    width:4vw;
+    height:4vh;
+    margin-bottom:20px;
+    margin-right: 10px;
+    gap:10px;
+
+}
+.line2
+{
+    display:flex;
+    width:3vw;
+    height:3vh;
+    gap:10px;
+    margin-bottom:20px;
+
+}
+.line3
+{
+    display:flex;
+    width:3vw;
+    height:3vh;
+    gap:10px;
+    margin-bottom:20px;
+    margin-right: 10px;
+}
+
+.con2 
+{
+    display:flex;
+    width:20vw;
+    height:50vh;
+    margin-top: 20px;
+}
+.con3
+{
+    display:flex;
+    width:20vw;
+    height:15vh;
+    margin-top: 20px;
+}
