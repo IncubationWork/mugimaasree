@@ -5,21 +5,21 @@
     font-family: sans-serif;
 }
 body{
-    height: 100vh;
+    height:100vh;
     width:100vw;
     background: rgb(212, 209, 209);
-    
-
-}
+    margin: auto;
+    }
 header{
     display: flex;
-    background-color: black;
-    height: 6vh;
-    width: 100vw;
-    margin: auto;
-    position:sticky;
+    background-color: #212124;
+    position: fixed;
+    left: 0;
+    right: 0;
     top: 0;
-    z-index: 80;
+    height:50px;
+    width: 100%;
+    z-index: 2000;
 }
 .flickr{
     display: flex;
@@ -86,15 +86,14 @@ header{
 .option ul li:hover .option-1{
     display:block;
     visibility: visible;
-    display: block;
     position:absolute; 
     margin-top: -5px;
     margin-left:-3px;
 }
 .option ul li:hover .option-1 ul{
     display:block;
-    margin:10px;
-    background-color: rgb(255, 255, 255);
+    margin-top:20px;
+    background-color:rgb(255, 255, 255);
     color:black;
     border:1px solid rgba(128, 128, 128, 0.37);
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.15);
@@ -103,21 +102,23 @@ header{
     width:150px;
     padding:2px;
     margin:5px;
+    background-color: rgb(255, 255, 255);
     border-radius: 0;
     text-align: left;
 }
 .option ul li:hover .option-1 ul li:hover{
-    background-color:rgba(0,0,0,0.042); 
+    background-color:white; 
+    
 }
 .option .option-1::before{
     content:'';
     position:absolute;
-    top:21px;
-    left:21em;
+    top:15px;
+    left:10px;
     width:15px;
     height: 15px;
     background:white;
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 form{
     display: flex;
@@ -175,40 +176,7 @@ height: 36px;
 place-self:center;
 position: absolute;
 left:81%;
-}
-.image3 .tooltip{
-    visibility: hidden;
-    width:40px;
-    background-color: white;
-    color:grey;
-    text-align: center;
-    font-size: 12px;
-    border-radius: 3px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    top: 140%;
-    left: -2%;
-    margin-left: -1px;
-    transition: opacity 0.3s;
-    border:1px solid rgba(195, 193, 193, 0.736);
-    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
-}
-.image3:hover .tooltip {
-    visibility: visible;
-    opacity:1 
-  }
-  .image3:hover .tooltip::before{
-    content:'';
-    position:absolute;
-    top:-5px;
-    left:15%;
-    width:15px;
-    height: 15px;
-    background:white;
-    transform: rotate(45deg); 
-    border:1px solid transparent;
-    z-index: -1;
+top: 10px;
 }
 .image4{
     background-image: url(image.png);
@@ -233,14 +201,13 @@ left:81%;
 }
 nav{
     display: flex;
-    background-color: white;
-    width: 100vw;
-    height:10vh;
-    border-bottom: 3px solid rgba(234, 231, 231, 0.357);
-    
-    
-    
+    }
+main{
+    display: flex;
+    background-color: rgb;
 }
+
+
 .nav1 ul{
     display: inline-flex;
     align-items: center;
@@ -401,6 +368,652 @@ nav{
     width: 25px;
     cursor: pointer;
 }
+.colorbox1 .tooltip{
+    visibility: hidden;
+    width:40px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox1:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox1:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox2 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:5%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox2:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox2:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox3 .tooltip{
+    visibility: hidden;
+    width:70px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:12%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox3:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox3:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox4 .tooltip{
+    visibility: hidden;
+    width:60px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:20%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox4:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox4:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox5 .tooltip{
+    visibility: hidden;
+    width:60px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:25%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox5:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox5:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox6 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:30%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox6:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox6.box4 .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox7 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:40%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox7:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox7:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox8 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:45%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox8:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox8:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox9 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:54%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox9:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox9:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox10 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:60%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox10:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox10:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox11 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:67%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox11:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox11:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox12 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:73%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox12:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox12:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox13 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:79%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox13:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox13:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox14 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:84%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox14:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox14:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.colorbox15 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:93%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.colorbox15:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .colorbox15:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.box1 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:-3%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.box1:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .box1:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.box2 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:15%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.box2:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .box2:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.box3 .tooltip{
+    visibility: hidden;
+    width:70px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:55%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.box3:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .box3:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
+.box4 .tooltip{
+    visibility: hidden;
+    width:50px;
+    background-color: rgb(251, 245, 245);
+    color:grey;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 140%;
+    left:70%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
+}
+.box4:hover .tooltip{
+    visibility: visible;
+    opacity:1 ;
+}
+  .box4:hover .tooltip::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index:-2;
+}
 .nav3{
     display:inline-flex;
     gap:3px;
@@ -441,10 +1054,12 @@ nav{
     }
     .advance{
         position: relative;
-        right:13.5%;
+        right:14%;
         top:65%;
         color: rgb(125, 124, 124);
         cursor: pointer;
+        text-decoration-line: none;
+        text-decoration-style: none;
     }
     .setting{
         background-image: url(image.png);
@@ -486,6 +1101,7 @@ nav{
     width:20vw;
     height:4vh;
     justify-content: space-evenly;
+    cursor: pointer;
     
 }
 .menu1
@@ -494,6 +1110,7 @@ nav{
     font-size:14px;
     padding-top: 5px;
     color:rgba(0, 0, 0, 0.519);
+    
 }
 .image6
 {
@@ -531,6 +1148,7 @@ nav{
     width:25vw;
     height:4vh;
     justify-content: space-evenly;
+    cursor: pointer;
 
 }
 .image8
@@ -617,7 +1235,7 @@ nav{
 width:35%;
 height:3vh;  
 justify-content: space-evenly;
-margin-left:33%;    
+margin-left:3%;    
 }
 a{
 text-decoration:none;
@@ -642,11 +1260,13 @@ color:rgb(30, 100, 128);
     display:flex;
     width:100%;
     height:3vh;
+    padding:25px;
     justify-content:space-between;
  }
 .b1{
  width:40%;
  height:3vh;
+ margin-left:-2%;
   }
 .view{
     display:flex;
@@ -672,16 +1292,19 @@ color:rgb(30, 100, 128);
     width: 100px;
     height: 100px;
     position: relative;
-    left:87.3%;
-    top:-150px;
+    left:86.8%;
+    top:-144.5px;
  }
  .text{
-    width:100%;
-    height:100%;
-    position:relative;  
-    top:-102%;
-    top:-100%;
-    left:0%;
+    width:140px;
+    height:140px;
+    position:relative;
+    top:-145%;
+    left:-1%;
+    background-color: rgba(2, 2, 2, 0.3);   
+    color:white;
+    font-weight: lighter;
+    cursor:pointer;
 
     
  }
@@ -690,19 +1313,139 @@ color:rgb(30, 100, 128);
     top:40%;
     left: 15%;
  }
+ .container3{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:100%;
+    position:relative;
+    margin-top:40px;
+    margin-left:40px
+
+
+  }
+  aside{
+    margin-bottom: 20px;
+  }
+  .sidebar1{
+    background-color: white;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin-right:25px
+  }
+  .rel-search{
+    display:block;
+    padding-top:20px;
+    margin-left: 2px;
+    margin-bottom: 20px;
+  }
+  .rel-search h4{
+    padding-bottom: 20px;
+  }
+  .list{
+    background-color: rgb(210, 209, 209);
+    border:none;
+    border-radius:5px;
+    float:left;
+    margin: 0 5px 5px 0;
+    max-width: 96%;
+    padding:5px;
+    position: relative;
+    transition: all .15s ease-in-out;
+
+  }
+  .list:hover{
+    background-color:rgb(168, 165, 165) ;
+    color:white;
+    cursor:pointer;
+  }
+
+  .sidebar2{
+    background-color: white;
+    width:91% ;
+    padding:30px;
+
+
+  }
+  .sidebar2_head1{
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
+  .group-result{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .group-name{
+    align-self:center;
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+  .profile1{
+    background-image: url(pic13.jpeg);
+    background-size: cover;
+    width:35px;
+    height: 35px;
+    border-radius:100%;
+  }
+  .join{
+    font-size: 20px;
+    height: 25px;
+    width: 50px;
+    align-self:center;
+  }
+  .sidebar2_head2{
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    margin-top:20px;
+  }
+  .profile2{
+    background-image: url(pic12.jpg);
+    background-size: cover;
+    width:35px;
+    height: 35px;
+    border-radius:100%;
+  }
+  .sidebar3{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height:50px;
+    background-color: white;
+    font-size: 14px;
+    color:rgb(167, 162, 162);
+    box-sizing: border-box;
+    margin-top:200px;
+    padding:20px;
+    column-gap: 5px;
+
+  }
+.lang-img{
+    background-image: url(image.png);
+    background-position: -524px -85px; 
+    width: 15px;
+    height: 8px;
+}
+
  .container3
 {   
     width:20vw;
     height:80vh;
     position: relative;
-    left:109%;
+    left:104%;
     margin-top:-215%;
     
 }
 .con1 
 {
     display: flex;
-    width:99%;
+    width:95%;
     height:20vh;
     background-color: rgba(255, 255, 255, 0.953);
     margin-bottom: 10px;
@@ -731,8 +1474,10 @@ color:rgb(30, 100, 128);
 {
     font-size: 20px;
     padding-inline: 10px;
+    margin-left: 10px;
     color:rgba(0, 0, 0, 0.693);
-    background:rgba(179, 178, 178, 0.515);
+    background:rgba(146, 145, 145, 0.515);
+    border-radius:15%;
 }
 
 .line:hover
@@ -745,11 +1490,11 @@ color:rgb(30, 100, 128);
 .line1
 {
     display:flex;
-    width:4vw;
-    height:4vh;
+    width:3vw;
+    height:3vh;
     margin-bottom:20px;
     margin-right: 10px;
-    gap:10px;
+    
 
 }
 .line2
@@ -757,7 +1502,6 @@ color:rgb(30, 100, 128);
     display:flex;
     width:3vw;
     height:3vh;
-    gap:10px;
     margin-bottom:20px;
 
 }
@@ -766,7 +1510,6 @@ color:rgb(30, 100, 128);
     display:flex;
     width:3vw;
     height:3vh;
-    gap:10px;
     margin-bottom:20px;
     margin-right: 10px;
 }
@@ -774,14 +1517,75 @@ color:rgb(30, 100, 128);
 .con2 
 {
     display:flex;
-    width:20vw;
-    height:50vh;
+    width:19vw;
+    height:35vh;
     margin-top: 20px;
+    background-color: white;
+
 }
+.gr{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+    text-align: left;
+    
+  }
+  .sb{
+    align-self:center;
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+  .p1{
+    background-image: url(pic10.jpeg);
+    background-size: cover;
+    width:35px;
+    height: 35px;
+    position: relative;
+    left:10%;
+    border-radius:100%;
+  }
+  input{
+    color: blue;
+    border: 2px solid blue;
+  }
+  .ji{
+    font-size: 20px;
+    height: 25px;
+    width: 50px;
+    align-self:center;
+  }
+  .sb2{
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    margin-top:20px;
+  }
+  .p2{
+    background-image: url(pic11.jpg);
+    background-size: cover;
+    width:35px;
+    height: 35px;
+    border-radius:100%;
+  }
 .con3
 {
     display:flex;
     width:20vw;
     height:15vh;
     margin-top: 20px;
+    background-color: white;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color:rgb(167, 162, 162);
+    padding:10px;
+    column-gap:15px;
+    row-gap:10px;
+
+  }
+.lang{
+    background-image: url(image.png);
+    background-position: -542px -483px; 
+    width: 15px;
+    height: 10px;
 }
