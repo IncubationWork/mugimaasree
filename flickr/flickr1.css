@@ -210,7 +210,8 @@ nav{
     top:50px;
     z-index:1;
     flex-direction:column;
-    border-bottom: 2px solid hsla(0,0%,54%,.3);
+    border-bottom: 1px solid hsla(0,0%,54%,.3);
+
 }
 .nav1{
     display: flex;
@@ -252,6 +253,7 @@ nav{
     width:80%;
     margin:0 auto;
     background-color: #fff;
+
 }
 .color{
     display:flex;
