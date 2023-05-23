@@ -4100,7 +4100,7 @@ nav{
         visibility: hidden;
     }
     .aside2{
-       visibility: hidden;
+       display: none;
     }
     .content{
         margin-top: -11%;
@@ -4119,7 +4119,7 @@ nav{
         left: 100%;
     }
     .main{
-        margin-left:64%;
+
         width: 100%;
     }
     .image3{
