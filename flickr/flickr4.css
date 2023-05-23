@@ -7,6 +7,13 @@
 body{
     background-color: #f3f5f6;
 }
+.header1{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 50px 100px 1fr;
+    overflow-x: hidden;
+}
 header{
     display: flex;
     height:50px;
@@ -83,7 +90,7 @@ header{
     opacity: 0.8;
 }
 
-.option-1{
+/*.option-1{
     display: none;
     visibility: hidden;
 }
@@ -122,7 +129,7 @@ header{
     height: 15px;
     background:white;
     transform: rotate(45deg);
-}
+}*/
 form{
     display: flex;
     place-self:center;
@@ -1121,14 +1128,13 @@ main{
     top:150px;
     margin: auto;
     flex-direction: row;
-    gap:25px;
+    gap:35px;
     
 }
 .aside1{
     display: flex;
     height: 1500px;
     width:75%;
-    border: 2px solid;
     flex-direction: column;
 }
 .menu
@@ -1155,7 +1161,7 @@ main{
     height: 7px;
     transform: scale(1.2);
     position: relative;
-    left:-24px;
+    left:-19px;
     top:10px;
 }
 
@@ -1184,6 +1190,9 @@ main{
     height:4vh;
     justify-content: space-evenly;
     cursor: pointer;
+    position: relative;
+    left:55%;
+    top:-2.7%;
 
 }
 .image8
@@ -1204,6 +1213,7 @@ main{
     padding-top:7px;
     padding-left:-10px;
     color:rgba(0, 0, 0, 0.519);
+
 }
 .menu4
 {
@@ -1218,8 +1228,8 @@ main{
     width: 15px;
     height: 6px;
     position: relative;
-    left:-24px;
-    top:10px;
+    left:-20px;
+    top:11px;
     transform: scale(1.2);
 }
 .image10
@@ -1246,11 +1256,92 @@ main{
     height: 19px;
     margin-top: 8px;
 }
+.c1{
+    display:flex;
+    width: 100%;
+    place-self: center;
+    justify-content: space-between;
+}
+.menu5{
+    text-decoration: none;
+    color:#006dac;
+}
+.menu5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*
+.textwrap1:hover 
+{
+    opacity: 1;
+}
+.conwrap2
+{
+    width:180px;
+    height: 156px;
+}
+
+.textwrap2
+{
+    height:156px;
+    background: rgba(0, 0, 0, 0.432);
+    color:#fff;
+    opacity: 1;
+    align-self:end;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.textwrap2
+{
+    width:180px;
+    height:156px;
+    position:relative;
+    bottom:9%;  
+}
+.title2
+{
+    font-size: 16px;
+}
+.star1
+{
+    background-image:url(spriteimages.png);
+    background-position: -317px -253px; 
+    width: 19px;
+    height: 19px;
+}
+.msg1
+{
+    background-image:url(spriteimages.png);
+    background-position: -490px -177px; 
+    width: 34px;
+    height: 23px;
+}
+.plus1
+{
+    background-image:url(spriteimages.png);
+    background-position: -412px -239px; 
+    width: 21px;
+    height: 20px;
+}
+.textwrap2:hover 
+{
+    opacity: 1;
+}
+.conwrap3
+{   
+    width:180px;
+    height: 156px;
+}
+
+.textwrap3
+{
+    height:156px;
+    background: rgba(0, 0, 0, 0.432);
+    color:#fff;
+    opacity: 0;*/
 
 .aside2{
     display: flex;
     height:800px;
-    width:25%;
     position: sticky;
     top:-5px;
     flex-direction: column;
@@ -1261,7 +1352,6 @@ main{
     display: flex;
     margin-top:10%;
     height:200px;
-    width:100%;
     background-color: #fff;
     flex-direction: column;
     
@@ -1270,7 +1360,6 @@ main{
 .sub2{
     display: flex;
     height:350px;
-    width:100%;
     background-color: #fff;
     flex-direction: column;
     cursor: pointer;
@@ -1279,7 +1368,6 @@ main{
 .sub3{
     display: flex;
     height:110px;
-    width: 100%;
     background-color: #fff;
     flex-direction: column;
     }
@@ -1287,7 +1375,6 @@ main{
 .relate{
     display: flex;
     height:50px;
-    width:100%;
     font-size:18px;
     font-weight: 600;
     color: #212124;
@@ -1299,14 +1386,12 @@ main{
 .related-search{
     display: flex;
     height:140px;
-    width: 100%;
     flex-direction: column;
     position: relative;
     left: 5%;
 }
 .line1{
     display:flex;
-    width:100%;
     height:40px;
     cursor: pointer;
     margin-right: 10px;
@@ -1314,7 +1399,6 @@ main{
 }
 .line2{
     display:flex;
-    width:100%;
     height:40px;
     cursor: pointer;
     margin-right: 10px;
@@ -1322,7 +1406,6 @@ main{
 }
 .line3{
     display:flex;
-    width:100%;
     height:40px;
     cursor: pointer;
     margin-right: 10px;
@@ -1343,7 +1426,6 @@ main{
   .group-result{
     display: flex;
     height:50px;
-    width:100%;
     font-size:18px;
     font-weight: 600;
     color: #212124;
@@ -1357,7 +1439,6 @@ main{
   .sub-group2{
     display: flex;
     height:50px;
-    width:100%;
     font-size:18px;
     font-weight: 600;
     color: #212124;
@@ -1367,7 +1448,6 @@ main{
   .sub-group3{
     display: flex;
     height:100px;
-    width:100%;
     font-size:18px;
     font-weight: 600;
     color: #212124;
@@ -1378,7 +1458,6 @@ main{
   .sub-group4{
     display: flex;
     height:50px;
-    width:100%;
     font-size:18px;
     font-weight: 600;
     color: #212124;
@@ -1388,7 +1467,6 @@ main{
   .sub-group5{
     display: flex;
     height:100px;
-    width:100%;
     font-size:18px;
     font-weight: 600;
     color: #212124;
@@ -1439,21 +1517,18 @@ main{
   }
     .word1{
         display:flex;
-        width:100%;
         height:30px;
         cursor: pointer;
         gap:5px;
     }
     .word2{
      display:flex;
-    width:100%;
     height:30px;
     cursor: pointer;
     gap:5px;
     }
     .word3{
         display:flex;
-    width:100%;
     height:30px;
     cursor: pointer;
     gap:20px;
@@ -1543,11 +1618,11 @@ main{
     }
     .image-text{
         display: flex;
-        width:200%;
+        width:100%;
         height:150px;
         position:relative;
     
-        background-color: rgba(2, 2, 2, 0.3);  
+        background-color: rgba(2, 2, 2, 1);  
          
         color:white;
         font-weight: lighter;
