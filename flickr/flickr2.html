@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search:animals | Flickr</title>
+    <link rel="shortcut icon" href="https://combo.staticflickr.com/pw/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="flickr2.css">
+</head>
+<body>
+   <!-- <div class="container">
+        <header>
+         <div class="header">
+            <div class="flickr">
+                <abbr title="Flickr logo.If you click it,you,ll go home"><div class="image1"></div>
+                <div class="image2"></div>
+                <div class="logo"></div></abbr>
+            </div>
+            <div class="option">
+                <ul>
+                    <li>You</li>
+                    <li>Explore</li>
+                    <li>Prints</li>
+                    <li>Get Pro</li>
+                </ul>
+            </div>
+            <form>
+                <div class="search-icon"></div>
+                <input class="search-box" type="text" placeholder="Photos, People, or Groups">
+            </form>
+            <div id="picture">
+                    <abbr title="Upload"><div class="im image3"></div></abbr>
+                <div class="im image4"></div>
+                <img src="image1.png" class="im image5">
+            </div>
+         </div>
+        </header>
+        <nav>
+            <div class="nav1">
+                <ul>
+                    <li class="a1"><a href="#">Photos</a></li>
+                    <li class="a2"><a href="#">People</a></li>
+                    <li class="a3"><a href="#">Groups</a></li>
+                </ul>
+            </div>
+            <div class="nav2"></div>
+        </nav>
+        <main>
+            <div class="aside1"></div>
+            <div class="aside2"></div>
+        </main>
+    </div>-->
+    <div id="flickr-base">
+        <div class="top-container">
+            <header>
+                
+                <div class="head-container">
+                    <div class="menu-icon"></div> 
+                    <div id="logo">
+                        <div class="img1"></div>
+                        <div class="img2"></div>
+                        <div class="logo"></div>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li>You
+                                <!--<div class="sub-menu-1">
+                                    <ul>
+                                        <li>About</li>
+                                        <li>Photostream</li>
+                                        <li>Album</li>
+                                        <li>Faves</li>
+                                        <li>Galleries</li>
+                                        <li>Groups</li>
+                                        <li>Camera Roll</li>
+                                        <div class="dropdown-divider">
+                                            <hr>
+                                        </div>
+                                        <li>People</li>
+                                        <li>Organize</li>
+                                    </ul>
+                                </div>-->
+                            </li>
+                            <li>Explore
+                                <!--<div class="sub-menu-1">
+                                 <ul>
+                                     <li>Recent Photos</li>
+                                     <li>Trending</li>
+                                     <li>Events</li>
+                                     <li>The Commons</li>
+                                     <li>Flickr Galleries</li>
+                                     <li>World Map</li>
+                                     <li>Camera Finder</li>
+                                     <li>Flickr Blog</li>
+                                 </ul>
+                                 </div>-->
+                           </li>
+                            <li>Prints
+                                <!--<div class="sub-menu-1">
+                                 <ul>
+                                     <li>The Print Shop <span style="background-color: orange; color:white;">NEW</span> </li>
+                                     <li>Prints & Wall Art</li>
+                                     <li>Photo Books</li>
+                                     <li>View Cart (0)</li>
+                                 </ul>
+                             </div>-->
+                         </li>
+                            <li>Get Pro
+                                <!--<div class="sub-menu-1">
+                                 <ul>
+                                     <li>Pro Plans</li>
+                                     <li>Stats Dashboard</li>
+                                     <li>Get Auto-Uploadr</li>
+                                </ul>
+                             </div>-->
+                        </li>
+                        </ul>
+                    </div>
+                    <div id="search">
+                        <!--<div id="search-icon"></div>-->
+                        <button id="search-icon"></button>
+                    <input type="text" id="search-box" name="search" placeholder="Photos, people, or groups"></div>
+                    <div id="profile">
+                        <div class="img3">
+                    <span class="tooltiptext">Upload</span>
+                </div>
+                <div class="img4"></div>
+               <img class="img5" src="profile.png">
+                     </div>
+                    </div>   
+            </header>
+            <nav>
+                <div class="nav-container">
+                    <ul>
+                        <li class="active">Photos</li>
+                        <li>People</li>
+                        <li>Groups</li>
+                    </ul>
+                </div>
+                <div class="sub-nav-container">
+                    <div id="color">
+                            <div class="colur picker1">
+                                <span class="tooltiptext" width="40px">Red</span>
+                            </div>
+                            <div class="colur picker2">
+                                <span class="tooltiptext" width="80px">Dark orange</span>
+                            </div>
+                            <div class="colur picker3">
+                                <span class="tooltiptext" width="50px">Orange</span>
+                            </div>
+                            <div class="colur picker4">
+                                <span class="tooltiptext" width="70px">Pale pink</span>
+                            </div>
+                            <div class="colur picker5">
+                                <span class="tooltiptext" width="100px">Lemon yellow</span>
+                            </div>
+                            <div class="colur picker6">
+                                <span class="tooltiptext" width="110px">School bus yellow</span>
+                            </div>
+                            <div class="colur picker7">
+                                <span class="tooltiptext" width="50px">Green</span>
+                            </div>
+                            <div class="colur picker8">
+                                <span class="tooltiptext" width="110px">Dark lime green</span>
+                            </div>
+                            <div class="colur picker9">
+                              <span class="tooltiptext" width="40px">Cyan</span>
+                            </div>
+                            <div class="colur picker10">
+                               <span class="tooltiptext" width="40px">Blue</span>
+                            </div>
+                            <div class="colur picker11">
+                                <span class="tooltiptext" width="50px">Violet</span>
+                            </div>
+                            <div class="colur picker12">
+                                <span class="tooltiptext" width="40px">Pink</span>
+                            </div>
+                            <div class="colur picker13">
+                              <span class="tooltiptext" width="50px">White</span>
+                            </div>
+                            <div class="colur picker14">
+                                <span class="tooltiptext" width="40px">Grey</span>
+                            </div>
+                            <div class="colur picker15">
+                               <span class="tooltiptext" width="50px">Black</span>
+                            </div>
+                       
+                    </div>
+                    <div id="pattern">
+                        <div class="pat pattern1">
+                            <span class="tooltiptext" width="110px">Black and white</span>
+                            </div>
+                            <div class="pat pattern2">
+                             <span class="tooltiptext" width="130px">Shallow depth of field</span>
+                            </div>
+                            <div class="pat pattern3">
+                             <span class="tooltiptext" width="80px">Minimalist</span>
+                            </div>
+                            <div class="pat pattern4">
+                             <span class="tooltiptext" width="80px">Patterns</span>
+                            </div>
+                    </div>
+                    <div id="adv-setting">
+                        <div class="advanced">Advanced 
+                            <span class="tooltiptext">Toggle advanced</span>
+                                    </div>      
+                                    <div class="setting">
+                                    <span class="tooltiptext">Toggle advanced</span>
+                                    </div>
+                    </div>
+                </div>
+            </nav>
+            </div>
+       
+        <div class="bottom-container">
+            <main>
+                <div class="left-content">
+                    <div class="tool-head">
+                        <div class="left-tool">
+                            <div class="tool-0">Search filters</div>
+                            <div class="tool tool-1">Any license
+                                <div class="tool tool-icon"></div>
+                            </div>
+                            <div class="tool tool-2">Safesearch on
+                                <div class="tool tool-icon"></div>
+                            </div>
+                        </div>
+                        <div class="right-tool">
+                            <div class="share-icon"></div>
+                                <div class="tool tool-3">Share</div>
+                            <div class="tool-4">Relevant
+                                <div class="tool-icon"></div>
+                            </div>
+                            <div class="view-tool">
+                            <div class="tool view-icon1"></div>
+                            <div class="tool view-icon2"></div>
+                            <div class="tool view-icon3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img1-head">
+                        <div class="left-head">Sposored images from <span><strong>iStock.</strong></span></div>
+                        <div class="right-head">10 free downloads. Any monthly plan. Use code:FLICKR10</div>
+                    </div>
+                    <div class="img1-con">
+                        <div class="img1-list">
+                            <div class="isphoto"><abbr title="View from the top of a high mountain to the valley covered with clouds."><img src=istockphoto-1.jpg></abbr></div>
+                            <div class="isphoto"><abbr title="Glacier cave exploration"><img src=istockphoto-2.jpg></abbr></div>
+                            <div class="isphoto"><abbr title="Aerial view of Italian alps Dolomites,surrounded by green meadows"> <img src=istockphoto-3.jpg></abbr></div>
+                            <div class="isphoto"><abbr title="Picturesque snowy mountain ridges and deep valleys with green fields,Lauterbrunnen valley, Switzerland,Europe. "><img src=istockphoto-4.jpg></abbr></div>
+                            <div class="isphoto"><abbr title="Autumnal forest in Carpathian mountains. Foggy wheather. Location:Ukraine,Europe"><img src=istockphoto-5.jpg></abbr></div>
+                            <div class="isphoto"><abbr title="Rocky mountains and the lake scenic landscapes."><img src=istockphoto-6.jpg></abbr></div>
+                           <div  class="isphoto seven"><img src="istockphoto-7.jpg">
+                            <div class="text-wrapper">
+                               <h3>View more</h3>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="img1-foot">Upgrade to Flickr Pro to hide these ads</div>
+                    <div class="img2-head">
+                        <div class="left-head">From The Print Shop <span style="background-color: #ff9f00; color:white;">BETA</span></div>
+                        <div class="right-head">View all 846</div>
+                    </div>
+                    <div class="img2-con">
+                        <div class="img2-list">
+                            <div class="img-item"><img src="freeze.jpeg" alt="lake">
+                            <div class="text-wrapper">
+                                <div class="in_tool-1">
+                                    <div class="title">Freeze lake</div>
+                                    <div class="sub-title"><h5>by Tulip</h5></div>
+                                </div>
+                                <div class="in_tool-2">
+                                    <div class="star"></div>
+                                    <div class="count">34</div>
+                                    <div class="comment"></div>
+                                    <div class="count">3</div>
+                                   
+                                    <div class="plus_box"></div> 
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="img-item"><img src="mount_peak.jpg" alt="peak">
+                                <div class="text-wrapper">
+                                    <div class="in_tool-1">
+                                        <div class="title">Mountain peak</div>
+                                        <div class="sub-title"><h5>by Tulip</h5></div>
+                                    </div>
+                                    <div class="in_tool-2">
+                                        <div class="star"></div>
+                                        <div class="count">34</div>
+                                        <div class="comment"></div>
+                                        <div class="count">3</div>
+                                       
+                                        <div class="plus_box"></div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-item"><img src="greenmount.jpeg" alt="greenmount">
+                                <div class="text-wrapper">
+                                    <div class="in_tool-1">
+                                        <div class="title">Greeny mountain</div>
+                                        <div class="sub-title"><h5>by Tulip</h5></div>
+                                    </div>
+                                    <div class="in_tool-2">
+                                        <div class="star"></div>
+                                        <div class="count">34</div>
+                                        <div class="comment"></div>
+                                        <div class="count">3</div>
+                                       
+                                        <div class="plus_box"></div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-item"><img src="mountforest.jpeg" alt="forest">
+                            <div class="text-wrapper">
+                                <div class="in_tool-1">
+                                    <div class="title">Mountain forest</div>
+                                    <div class="sub-title"><h5>by Tulip</h5></div>
+                                </div>
+                                <div class="in_tool-2">
+                                    <div class="star"></div>
+                                    <div class="count">34</div>
+                                    <div class="comment"></div>
+                                    <div class="count">3</div>
+                                   
+                                    <div class="plus_box"></div> 
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img3-head">
+                        <div class="left-head">From people you follow</div>
+                        <div class="right-head">View all 10</div>
+                    </div>
+                    <div class="img3-con">
+                        <div class="img3-list">
+                            <div class="img-item"><img src="hike1.jpeg" alt="hike">
+                                <div class="img3_text_wrapper">
+                                    <div><h4>Take A Hike</h4></div>
+                                    <div><h6>a Flickr gallery</h6></div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <div class="in_tool-1">
+                                        <div class="title">Take a hike</div>
+                                        <div class="sub-title"><h5>by Tulip</h5></div>
+                                    </div>
+                                    <div class="in_tool-2">
+                                        <div class="star"></div>
+                                        <div class="count">34</div>
+                                        <div class="comment"></div>
+                                        <div class="count">3</div>
+                                       
+                                        <div class="plus_box"></div> 
+                                    </div>
+                                    <div class="in_tool-3">
+                                        <div class="more">
+                                            <!--<Span><div class="tooltip">More</div></Span>-->
+                                        </div>
+                                    </div>
+                                    </div>
+                               
+                            </div>
+                            <div class="img-item"><img src="blackandwhite.jpeg" alt="b&w">
+                                <div class="text-wrapper">
+                                    <div class="in_tool-1">
+                                        <div class="title">Alone sea</div>
+                                        <div class="sub-title"><h5>by Tulip</h5></div>
+                                    </div>
+                                    <div class="in_tool-2">
+                                        <div class="star"></div>
+                                        <div class="count">34</div>
+                                        <div class="comment"></div>
+                                        <div class="count">3</div>
+                                       
+                                        <div class="plus_box"></div> 
+                                    </div>
+                        
+                                    <div class="in_tool-3">
+                                        <div class="more">
+                                            <!--<Span><div class="tooltip">More</div></Span>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-item"><img src="color_mountain.jpeg" alt="color">
+                                <div class="text-wrapper">
+                                    <div class="in_tool-1">
+                                        <div class="title">Colorful Mountain</div>
+                                        <div class="sub-title"><h5>by Tulip</h5></div>
+                                    </div>
+                                    <div class="in_tool-2">
+                                        <div class="star"></div>
+                                        <div class="count">34</div>
+                                        <div class="comment"></div>
+                                        <div class="count">3</div>
+                                       
+                                        <div class="plus_box"></div> 
+                                    </div>                                
+                                    <div class="in_tool-3">
+                                        <div class="more">
+                                            <!--<Span><div class="tooltip">More</div></Span>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-item"><img src="tulipss.jpeg" alt="flower">
+                            
+                                <div class="text-wrapper">
+                                    <div class="in_tool-1">
+                                        <div class="title">Tulips garden</div>
+                                        <div class="sub-title"><h5>by Tulip</h5></div>
+                                    </div>
+                                    <div class="in_tool-2">
+                                        <div class="star"></div>
+                                        <div class="count">34</div>
+                                        <div class="comment"></div>
+                                        <div class="count">3</div>
+                                       
+                                        <div class="plus_box"></div> 
+                                    </div>
+                                    
+                                    <div class="in_tool-3">
+                                        <div class="more">
+                                            <!--<Span><div class="tooltip">More</div></Span>-->
+                                        </div>
+                                    </div>
+                                </div></div>
+                        </div>
+                    </div>
+                    <div class="img4-head">
+                        <div class="left-head">Everyone's photos</div>
+                        <div class="right-head">View all 301,243</div>
+                    </div>
+                    <div class="img4-con">
+                        <div class="img4-list">
+                                        <img src="pic-1.jpeg">
+                                        <img src="pic-2.jpeg">
+                                        <img src="pic-3.jpeg">
+                                        <img src="pic-4.jpeg">
+                                        <img src="pic-5.jpeg">
+                                        <img src="pic-6.jpeg">
+                                        <img src="pic-7.jpeg">
+                                        <img src="pic-8.jpeg">
+                                        <img src="pic-9.jpeg">
+                                        <img src="pic-10.jpeg">
+                                        <img src="pic-11.jpeg">
+                                        <img src="pic-12.jpeg">
+                                        <img src="pic-13.jpeg">
+                                        <img src="pic-14.jpeg">
+                                        <img src="pic-15.jpeg">
+                                        <img src="pic-16.jpeg">
+                                        <img src="pic-17.jpeg">
+                                        <img src="pic-18.jpeg">
+                                        <img src="pic-19.jpeg">
+                                        <img src="pic-20.jpeg">
+                                        <img src="pic-21.jpeg">
+                                        <img src="pic-22.jpeg">
+                                        <img src="pic-23.jpeg">
+                                        <img src="pic-24.jpeg">
+                                        <img src="pic-25.jpeg">
+                                        <img src="pic-26.jpeg">
+                                        <img src="pic-27.jpeg">
+                                        <img src="pic-30.jpeg">
+                                        <img src="pic-28.jpeg">
+                                        <img src="pic-29.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <aside>
+                        <div class="sidebar1">
+                            <div class="rel-search"><h4>Related searches</h4></div>
+                                <div class="tag-list">
+                                    <ul>
+                                        <li>Clouds</li>
+                                        <li>Sky</li>
+                                        <li>Landscapes</li>
+                                        <li>Trees</li>
+                                        <li>Snow</li>
+                                        <li>Water</li>
+                                        <li>Nature</li>
+                                        <li>Sunset</li>
+                                        <li>Lake</li>
+                                        <li>Green</li>
+                                    </ul>
+                                </div>                
+                        </div>
+                       
+                        <div class="sidebar2">
+                            <div class="group-result">Group results</div>
+                            <div class="sidebar2_head1">
+                                <img src="pic-61.jpeg" class="profile1">
+                                <div class="group-name">@ Mountains form E..</div>
+                                <input type="button" class="join" value="Join">
+                            </div>
+                            <div class="join-image">
+                                <div class="jimg-set">
+                                <img src="pic-79.jpeg" width="50px" height="50px">
+                                <img src="pic-78.jpeg" width="80px" height="50px">
+                                <img src="pic-28.jpeg" width="60px" height="50px">
+                                <img src="pic-83.jpeg" width="58px" height="50px">
+                                </div>
+                            </div>
+                            <div class="sidebar2_head2">
+                                <img src="pic-60.jpeg" class="profile2">
+                                <div class="group-name">Mountains & Clouds</div>
+                                <input type="button" class="join" value="Join">
+                            </div>
+                            <div class="join-image">
+                                <div class="jimg-set">
+                                <img src="pic-84.jpeg" width="50px" height="50px">
+                                <img src="pic-75.jpeg" width="75px" height="50px">
+                                <img src="pic-85.jpeg" width="60px" height="50px">
+                                <img src="pic-74.jpeg" width="62px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="sidebar3">
+                            <div class="web tag1">About</div>
+                            <div class="web tag2">Jobs</div>
+                            <div class="web tag3">Blog</div>
+                            <div class="web tag4">Developers</div>
+                            <div class="web tag5">Guidelines</div>
+                            <div class="web tag6">Help</div>
+                            <div class="web tag7">Help forum</div>
+                            <div class="web tag8">Privacy</div>
+                            <div class="web tag9">Terms</div>
+                            <div class="web tag10">Cookies</div>
+                            <div class="web tag11">English
+                            <div class="lang-img"></div>
+                        </div>
+                    </aside>
+                </div>
+                </main>
+        </div>
+    </div>
+</body>
+</html>
