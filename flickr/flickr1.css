@@ -1812,6 +1812,9 @@ right:-29.5%
     cursor: pointer;
     gap:20px;
     }
+    .image4-container{
+        cursor: pointer;
+    }
     .sub-word-image{
         display: flex;
         background-image: url(image.png);
@@ -1820,31 +1823,35 @@ right:-29.5%
         height: 8px;
         transform: scale(.7);
         position: relative;
-        top:75%;
+        top:60%;
         left:-4%;
     }
     .sub-word{
         font-size: 12px;
         color: #898989;
-        margin-top: 5%;
+        margin-top: 3%;
         margin-left: 5%;
     }
     .sub-word:hover{
         border-bottom: 1px solid #898989;
+        
     }
+    
     .search-filters{
         visibility: hidden;
     }
 @media (max-width:600px){
-    .header{
-        width: 100%;
+    .header1{
+        width: 100vw;
+        height: 100vh;
+
     }
     .menu-icon{
         visibility: visible;
         height: 30px;
         width: 30px;
         margin-top:2.5%;
-        margin-left:2%;
+        margin-left:-10%;
     }
     .image1{
         left:8%;
