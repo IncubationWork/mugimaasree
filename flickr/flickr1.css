@@ -1843,6 +1843,9 @@ right:-29.5%
         visibility: hidden;
     }
 @media (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
     .header1{
         display:grid;
         width:100vw;
