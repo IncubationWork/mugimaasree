@@ -256,6 +256,8 @@ nav{
     width:80%;
     margin:0 auto;
     background-color: #fff;
+    border-bottom: 1px solid hsla(0,0%,54%,.3);
+
 
 }
 .color{
@@ -1842,10 +1844,11 @@ right:-29.5%
     }
 @media (max-width:600px){
     .header1{
-        display: flex;
-        width: 97vw;
-        height: 500vh;
+        display:grid;
+        width:100vw;
+        height:100vh;
         overflow-x: hidden;
+        grid-template-rows:50px 100px 1fr;
 }
 .header{
     width: 100vw;
