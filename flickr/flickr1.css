@@ -8,7 +8,6 @@
 body{
     background-color: #f3f5f6;
     overflow-x: hidden;
-
 }
 .header1{
     display: grid;
@@ -1845,31 +1844,47 @@ main
         visibility: hidden;
     }
 @media (max-width:600px){
-   body{
-    overflow-x: hidden;
-   }
+    body{
+        overflow-x: hidden;
+    }
+    .aside2{
+        display: none;
+    }
     .header1{
         display: grid;
         height: 100vh;
         width: 100vw;
         grid-template-rows: 50px 100px 1fr;
-         }
-         header{
-         display: flex;
-         height:50px;
+    }
+    header{
+        display: flex;
+        height:50px;
         width: 100%;
-       background-color: rgba(21,21,23,.95);
-       position: fixed;
-       z-index:2;
-         }
-         .header{
-            display: flex;
-            margin: auto;
-            height: 50Px;
-            width:80%;
-            background-color: rgba(21,21,23,);
-         }
-.aside2{
+        background-color: rgba(21,21,23,.95);
+         position: fixed;
+        z-index:2;
+    }
+    .header{
+        display: flex;
+        margin: auto;
+        height: 50Px;
+        width:80%;
+        background-color: rgba(21,21,23,);
+    }
+    .option ul{
         display: none;
+    }
+    .image1{
+        left:8%;
+    }
+    .menu-icon{
+        visibility: visible;
+        transform: scale(0.7);
+    }
+    .image3{
+        display: none;
+    }
+    .image4{
+        left:80%;
     }
 }
