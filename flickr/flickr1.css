@@ -1887,4 +1887,47 @@ main
     .image4{
         left:80%;
     }
+    nav{
+        visibility: hidden;
+        width: 100%;
+    }
+    .nav1{
+        visibility: visible;
+        width: 100%;
+    }
+    .nav2{
+        display: none;
+    }
+    main{
+        top:150px;
+    }
+    .aside1{
+        visibility: visible;
+        width: 100%;
+    }
+    .row3{
+        display: none;
+    }
+    .row2{
+        visibility: hidden;
+    }
+    .row4{
+        display: none;
+    }
+    main{
+        margin-top:-55px;
+    }
+    .nav1 ul {
+        margin-left:1%;
+    }
+    .image2-container{
+        min-width: 300%;
+    }
+    .image3-container{
+        min-width: 200%;
+    }
+    .row1{
+        visibility: hidden;
+    }
+
 }
