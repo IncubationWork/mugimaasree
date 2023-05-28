@@ -8,12 +8,13 @@
 body{
     background-color: #f3f5f6;
     overflow-x: hidden;
+
 }
 .header1{
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template-rows: 50px 100px 1fr 260%;
+    grid-template-rows: 50px 100px 1fr;
 }
 header{
     display: flex;
@@ -1089,7 +1090,7 @@ right:-29.5%
 .menu-icon{
     visibility: hidden;
 }
-.content
+main
 {   
     display: flex;
     width:100%;
@@ -1099,7 +1100,7 @@ right:-29.5%
     gap:40px;
     background: rgba(233, 230, 230, 0.959);
 }
-.main
+.aside1
 {
     width:50%;
     height:100%;
@@ -1164,6 +1165,7 @@ right:-29.5%
     width: 25px;
     height: 18px;
     margin-top:5px;
+    margin-left: -20%;
     transform: scale(.9);
     cursor: pointer;
 }
@@ -1843,162 +1845,31 @@ right:-29.5%
         visibility: hidden;
     }
 @media (max-width:600px){
-    body{
-        overflow-x: hidden;
-    }
+   body{
+    overflow-x: hidden;
+   }
     .header1{
-        display:grid;
-        width:100vw;
-        height:100vh;
-        overflow-x: hidden;
-        grid-template-rows:50px 100px 1fr;
-}
-.header{
-    width: 100vw;
-}
-    .menu-icon{
-        visibility: visible;
-        height: 30px;
-        width: 30px;
-        margin-top:2.5%;
-        margin-left:-10%;
-    }
-    .image1{
-        left:8%;
-    }
-  .option{
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        grid-template-rows: 50px 100px 1fr;
+         }
+         header{
+         display: flex;
+         height:50px;
+        width: 100%;
+       background-color: rgba(21,21,23,.95);
+       position: fixed;
+       z-index:2;
+         }
+         .header{
+            display: flex;
+            margin: auto;
+            height: 50Px;
+            width:80%;
+            background-color: rgba(21,21,23,);
+         }
+.aside2{
         display: none;
     }
-    input{
-        visibility: hidden;
-    }
-    .aside2{
-       display: none;
-    }
-    .content{
-        margin-top: -11%;
-        background-color: transparent;
-        width: 100%;
-    }
-    .left{
-        visibility: hidden;
-    }
-    .right{
-        visibility: hidden;
-    }
-    .right-image3{
-        visibility: visible;
-        margin-left: -70%;
-        position: relative;
-        left: 60%;
-    }
-    .main{
-
-        width: 97%;
-    }
-
-    .image3{
-        visibility: hidden;
-    }
-    .image4{
-        margin-left:-10%;
-    }
-    .right-2{
-        position: relative;
-        visibility: visible;
-        left:15%;
-    }
-    .right-image4{
-        visibility: visible;
-        position: relative;
-        left:30%;
-    }
-    .search-icon{
-        background-position: -470px -305px; 
-        width: 25px;
-        height: 24px;
-        position: relative;
-        left:80%;
-        transform: scale(1.1);
-        }
-        
-    nav{
-        visibility: hidden;
-        width: 100%;
-    }
-    .nav1{
-        visibility: visible;
-        width: 100%;
-    }
-    .search-filters{
-        display: flex;
-        flex-direction: row;
-        visibility: visible;
-        color: #0091dc;
-        position: relative;
-        height: 40px;
-        width: 100%;
-       right:120%;
-       top:50%;
-    }
-    
-
-    .nav1 ul{
-     width: 100%;
-     position: relative;
-     left:-1%;
-    }
-    .row2{
-        visibility: hidden;
-    }
-    .row3{
-        display: none;
-    }
-    .row4{
-        display: none;
-    }
-    .search-box:focus{
-       display: none;
-    }
-    .search-icon:focus ~ .search-box{
-        width:350px;
-        outline:none; 
-        background-color:black;
-        transition-duration: 0.4s;
-        visibility: visible;
-    }
-    .image2-container .image2-list{
-        min-width:400%;
-    }
-    .image3-container .image3-list{
-        min-width:200%;
-    }
-    
-    .view1 a{
-        margin-left: -10%;
-    }
-    .view2 a{
-        margin-left: -10%;
-    }
-    .one a{
-         margin-left: -10%;
-    }
-    .viewmore{
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        top:-30%;
-        height: 30%;
-        width: 50%;
-    }
-    .image2-container{
-        display: flex;
-        flex-wrap: wrap;
-        width:100%;
-
-    }
-    body{
-        overflow-x: hidden;
-    }
 }
-
