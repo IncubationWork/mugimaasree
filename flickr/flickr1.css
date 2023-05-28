@@ -1846,6 +1846,9 @@ right:-29.5%
         width: 97vw;
         height: 500vh;
 }
+.header{
+    width: 100vw;
+}
     .menu-icon{
         visibility: visible;
         height: 30px;
@@ -1868,6 +1871,7 @@ right:-29.5%
     .content{
         margin-top: -11%;
         background-color: transparent;
+        width: 100%;
     }
     .left{
         visibility: hidden;
@@ -1877,19 +1881,20 @@ right:-29.5%
     }
     .right-image3{
         visibility: visible;
-        margin-left: -50%;
+        margin-left: -70%;
         position: relative;
-        left: 65%;
+        left: 60%;
     }
     .main{
 
-        width: 100%;
+        width: 97%;
     }
+
     .image3{
         visibility: hidden;
     }
     .image4{
-        margin-left:-7%;
+        margin-left:-10%;
     }
     .right-2{
         position: relative;
@@ -1918,7 +1923,7 @@ right:-29.5%
         visibility: visible;
         width: 100%;
     }
-    /*.search-filters{
+    .search-filters{
         display: flex;
         flex-direction: row;
         visibility: visible;
@@ -1928,7 +1933,7 @@ right:-29.5%
         width: 100%;
        right:120%;
        top:50%;
-    }*/
+    }
     
 
     .nav1 ul{
@@ -1946,7 +1951,7 @@ right:-29.5%
         display: none;
     }
     .search-box:focus{
-       visibility: hidden;
+       display: none;
     }
     .search-icon:focus ~ .search-box{
         width:350px;
@@ -1984,6 +1989,9 @@ right:-29.5%
         flex-wrap: wrap;
         width:100%;
 
+    }
+    body{
+        overflow-x: hidden;
     }
 }
 
