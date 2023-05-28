@@ -1845,6 +1845,7 @@ right:-29.5%
         display: flex;
         width: 97vw;
         height: 500vh;
+        overflow-x: hidden;
 }
 .header{
     width: 100vw;
