@@ -1949,31 +1949,5 @@ main
   .right{
     visibility: visible;
   }
-  form{
-    display: flex;
-    place-self:center;
-    position: absolute;
-    right:20%;
-    visibility: hidden;
-    
-}
-.vmore{
-    display: none;
-}
-.search-icon{
-    visibility: visible;
-background-image: url(image.png);
-background-position: -469px -305px; 
-width: 26px;
-height: 23px;
-transform: scale(1.3);
-place-self: center;
-cursor: pointer;
-position: absolute;
-left:77%;
-top:15%;
-outline: none;
-border: none;
-}
-
+  
 }
