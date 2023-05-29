@@ -1856,6 +1856,7 @@ main
         height: 100vh;
         width: 100vw;
         grid-template-rows: 50px 100px 1fr;
+        overflow-x: hidden;
     }
     header{
         display: flex;
@@ -1902,6 +1903,7 @@ main
     main{
         top:150px;
         margin-top: -55px;
+        overflow-x: hidden;
     }
     .aside1{
         visibility: visible;
