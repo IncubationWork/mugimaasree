@@ -1854,6 +1854,7 @@ main
     .aside1{
         visibility: visible;
         width: 100%;
+        overflow-x: hidden;
     }
     .header1{
         display: grid;
