@@ -1950,4 +1950,10 @@ main
   .vmore{
     display: none;
   }
+  .menu-icon{
+    visibility: visible;
+  }
+  .image3{
+    display: none;
+  }
 }
