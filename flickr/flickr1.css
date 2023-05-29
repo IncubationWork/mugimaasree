@@ -1947,4 +1947,7 @@ main
   .right{
     visibility: visible;
   }
+  .vmore{
+    display: none;
+  }
 }
