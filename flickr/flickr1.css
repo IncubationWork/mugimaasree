@@ -1861,7 +1861,7 @@ main
         display: flex;
         height:50px;
         width: 100%;
-        background-color: rgba(21,21,23,.95);
+        background-color: rgb(21,21,23);
          position: fixed;
         z-index:2;
     }
@@ -1870,7 +1870,7 @@ main
         margin: auto;
         height: 50Px;
         width:80%;
-        background-color: rgba(21,21,23,);
+        background-color: rgb(21,21,23);
     }
     .option ul{
         display: none;
@@ -1886,7 +1886,7 @@ main
         display: none;
     }
     .image4{
-        left:77%;
+        left:80%;
     }
     nav{
         visibility: hidden;
@@ -1901,7 +1901,6 @@ main
     }
     main{
         top:150px;
-        width: 100%;
         margin-top: -55px;
     }
     .aside1{
