@@ -1952,8 +1952,18 @@ main
   }
   .menu-icon{
     visibility: visible;
+    transform: scale(0.8);
   }
   .image3{
+    display: none;
+  }
+  .image4{
+    left:80%;
+  }
+  .image1{
+    left:8%;
+  }
+  form{
     display: none;
   }
 }
