@@ -1851,5 +1851,7 @@ main
     .aside2{
         display: none;
     }
-    
+    .aside1{
+        width: 100%;
+    }
 }
