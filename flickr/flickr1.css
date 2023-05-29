@@ -184,9 +184,9 @@ top:15%;
 }
 .image4{
     background-image: url(image.png);
-    background-position: -491px -417px; 
+    background-position: -496px -419px; 
     width: 29px;
-    height: 25px;
+    height: 23px;
     place-self: center;
     position: absolute;
     left: 83.7%;
@@ -1843,7 +1843,9 @@ main
     .search-filters{
         display: none;
     }
-    
+    .search-cross{
+        display: none;
+    }
 @media (max-width:600px){
     body{
         overflow-x: hidden;
@@ -2005,5 +2007,7 @@ border: none;
     width:350px;
     outline:none; 
     transition-duration: 0.4s;
+    visibility: hidden;
 }
+
 }
