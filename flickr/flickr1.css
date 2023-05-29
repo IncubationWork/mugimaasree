@@ -1901,6 +1901,8 @@ main
     }
     main{
         top:150px;
+        width: 100%;
+        margin-top: -55px;
     }
     .aside1{
         visibility: visible;
@@ -1915,9 +1917,7 @@ main
     .row4{
         display: none;
     }
-    main{
-        margin-top:-55px;
-    }
+   
     .nav1 ul {
         margin-left:1%;
     }
@@ -1967,10 +1967,6 @@ transform: scale(1.5);
 background-color:transparent;
 place-self: center;
 cursor: pointer;
-position: absolute;
-left: 3%;
-top:14%;
-z-index: 1;
 outline: none;
 border: none;
 }
