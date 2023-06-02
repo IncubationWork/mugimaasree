@@ -2006,7 +2006,7 @@ border: none;
     visibility: hidden;
 }
 .cross{
-    visibility: visible;
+    visibility:hidden;
     background-image: url(image.png);
     background-position: -536px -141px; 
    width: 21px;
@@ -2015,5 +2015,5 @@ border: none;
    left: 85%;
    top:15%;
 }
-
+ 
 }

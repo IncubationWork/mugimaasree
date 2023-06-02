@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic-operator</title>
+    <script>
+        function calc()
+        {
+            var number1 = parseFloat( document.getElementById('number1').value);
+            var number2 = parseFloat( document.getElementById('number2').value);
+            var res =  document.getElementById('operator').value;
+            if(res==='+')
+            {
+               document.getElementById('result').value=number1+number2;
+            }
+            if(res==='-')
+            {
+               document.getElementById('result').value=number1-number2;
+            }
+            if(res==='*')
+            {
+               document.getElementById('result').value=number1*number2;
+            }
+            if(res==='/')
+            {
+               document.getElementById('result').value=number1/number2;
+            }
+            if(res==='%')
+            {
+               document.getElementById('result').value=number1%number2;
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: pink;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+ <h1>Arithmetic Operators</h1>
+   Enter the number1 <input type="text" id="number1"><br><br>
+   Enter the number2 <input type="text" id="number2"><br><br>
+ select operator  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+    </select><br><br>
+   <button onclick="calc();">=</button><br><br>     
+    Result <input type="text" id="result">
+</body>
+</html>
