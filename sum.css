@@ -13,7 +13,7 @@
   .container{
     display: flex;
     flex-direction: column;
-    height:65vmin;
+    height:65vh;
     width:60vmin;
     border-radius: 5px;
     margin-top: 5%;
@@ -28,7 +28,7 @@
   }
   .head{
     display: flex;
-    height: 70%;
+    height: 100%;
     width: 100%;
     background-color:rgba(0, 139, 139, 0.613);
     flex-direction: column;
