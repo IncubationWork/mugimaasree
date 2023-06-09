@@ -12,11 +12,14 @@ function sumOfDigits()
           sum = sum + remainder;
           n = Math.floor(n/10);
         }
-        document.getElementById("sum").value = sum;
+        var resultElement=document.getElementById("sum");
+        resultElement.textContent="sum: " + sum;
+       document.getElementById("sum").classList.remove("hidden");
 
-    }  
+      }  
 }
-document.getElementById("clear").addEventListener("click", function() {
+    document.getElementById("clear").addEventListener("click", function() {
     document.getElementById("number").value = "";
-    document.getElementById("sum").value = "";
+    document.getElementById("sum").classList.add("hidden");
+
 });

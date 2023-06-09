@@ -13,7 +13,7 @@
   .container{
     display: flex;
     flex-direction: column;
-    height:65vh;
+    height:55vh;
     width:60vmin;
     border-radius: 5px;
     margin-top: 5%;
@@ -60,3 +60,7 @@
       padding: 0;
       margin-top: 20px;
     }
+    .hidden{
+      display: none;
+    }
+    
