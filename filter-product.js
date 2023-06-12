@@ -9,19 +9,19 @@ let listProducts =[
         quantity:0,
         image:'img4.jpg',
         nature:{
-            color:['White'],
+            color:'White',
             size:['s','m','l'],
             type:'Shirt'
         }
     },
     {
         id:2,
-        name:'Name product gray',
+        name:'Name product grey',
         price:500,
         quantity:20,
         image:'img6.jpg',
         nature:{
-            color:['Grey'],
+            color:'Grey',
             size:['s','m','l'],
             type:'Shirt'
         }
@@ -33,7 +33,7 @@ let listProducts =[
         quantity:20,
         image:'img5.jpg',
         nature:{
-            color:['Brown'],
+            color:'Brown',
             size:['s','m','l'],
             type:'Polo'
         }
@@ -45,7 +45,7 @@ let listProducts =[
         quantity:20,
         image:'img3.jpeg',
         nature:{
-            color:['Blue'],
+            color:'Blue',
             size:['s','m','l'],
             type:'Polo'
         }
@@ -64,12 +64,12 @@ let listProducts =[
     },
     {
         id:6,
-        name:'Name product White',
+        name:'Name product white',
         price:4000,
         quantity:20,
         image:'img1.jpg',
         nature:{
-            color:['White'],
+            color:'White',
             size:['s','m','l'],
             type:'T-shirt'
         }
@@ -81,19 +81,19 @@ let listProducts =[
         quantity:20,
         image:'img7.jpg',
         nature:{
-            color:['White'],
+            color:'Blue',
             size:['s','m','l'],
             type:'Shalwar Kameez'
         }
     },
     {
         id:8,
-        name:'Name product Red',
+        name:'Name product red',
         price:4500,
         quantity:20,
         image:'img9.jpg',
         nature:{
-            color:['Red'],
+            color:'Red',
             size:['s','m','l'],
             type:'Sleeve'
         }
@@ -105,43 +105,43 @@ let listProducts =[
         quantity:20,
         image:'img8.jpg',
         nature:{
-            color:['White'],
+            color:'Brown',
             size:['s','m','l'],
             type:'Shalwar Kameez'
         }
     },
     {
         id:10,
-        name:'Name product White',
+        name:'Name product white',
         price:7000,
         quantity:20,
         image:'img10.jpg',
         nature:{
-            color:['White'],
+            color:'White',
             size:['s','m','l'],
             type:'Dhoti'
         }
     },
     {
         id:11,
-        name:'Name product Green',
+        name:'Name product green',
         price:800,
         quantity:20,
         image:'img12.jpeg',
         nature:{
-            color:['Green'],
+            color:'Green',
             size:['s','m','l'],
             type:'Sweater'
         }
     },
     {
         id:12,
-        name:'Name product Gray',
+        name:'Name product grey',
         price:1000,
         quantity:20,
         image:'img11.jpg',
         nature:{
-            color:['Gray'],
+            color:'Grey',
             size:['s','m','l'],
             type:'Dhoti'
         }
@@ -186,13 +186,13 @@ filter.addEventListener('submit',function(event){
             }
         }
         if(valueFilter.color.value != ''){
-            if(item.nature.color.includes(valueFilter.color.value)){
+            if(!item.nature.color.includes(valueFilter.color.value)){
                 return false;
             }
         }
         if(valueFilter.name.value != '')
             {
-                if(item.name.includes(valueFilter.name.value))
+                if(!item.name.includes(valueFilter.name.value))
                 {
                     return false;
                 }
@@ -215,7 +215,9 @@ filter.addEventListener('submit',function(event){
     })
     showProduct(productFilter);
 });
-document.getElementById("clear").addEventListener("click", function() {
-    document.getElementById("input").value = "";
+document.getElementById('clear').addEventListener("click", function() {
+    if(listProducts){
+        []
+    }
     
 });
