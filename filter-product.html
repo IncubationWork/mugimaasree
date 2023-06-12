@@ -4,54 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price range filter</title>
-    <link rel="stylesheet" href="filter.css">
+    <title>filter-product</title>
+    <link rel="stylesheet" href="filter-product.css">
 </head>
 <body>
     <div class="container">
-        <form class="filter">
-            <div class="item">
+        <h1>Men's Collection</h1>
+         <form class="filter">
+            <div class="item" id="input">
                 <label for="">Category</label>
                 <select name="category">
                     <option value="">---</option>
                     <option value="T-shirt">T-shirt</option>
                     <option value="Shirt">Shirt</option>
                     <option value="Polo">Polo</option>
-                </select>
+                    <option value="Shalwar Kameez">Shalwar kameez</option>
+                    <option value="Sleeve">Sleeve</option>
+                    <option value="Dhoti">Dhoti</option>
+                    <option value="Sweater">Sweater</option>
+                 </select>
             </div>
-            <div class="item">
+            <div class="item" id="input">
                 <label for="">Color</label>
                 <select name="color">
                     <option value="">---</option>
-                    <option value="white">white</option>
-                    <option value="black">black</option>
-                    <option value="grey">grey</option>
-                    <option value="blue">blue</option>
-                    <option value="brown">brown</option>
+                    <option value="White">White</option>
+                    <option value="Black">Black</option>
+                    <option value="Grey">Grey</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Green">Green</option>
+
                 </select>
             </div>
             <div class="item">
                 <label for="">Name</label>
-                <input type="text" name="name">
+                <input id="input" type="text" name="name">
             </div>
             <div class="item">
                 <label for="">Min price</label>
-                <input type="number" name="minPrice">
+                <input type="number" id="input" name="minPrice">
             </div>
             <div class="item">
                 <label for="">Max Price</label>
-                <input type="number" name="maxPrice">
+                <input type="number" id="input" name="maxPrice">
             </div>
             <div class="item submit">
                 <button>Search</button>
             </div>
+        <!--  <button id="clear">clear</button>-->
         </form>
         <div class="countResults">
-            Found <b id="count">5</b>results
+            Found <b id="count"> 5 </b> results
         </div>
         <div id="list">
         </div>
     </div>
-    <script src="filter.js"></script>
+    <script src="filter-product.js"></script>
 </body>
 </html>
