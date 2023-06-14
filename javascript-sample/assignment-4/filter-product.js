@@ -7,7 +7,7 @@ let listProducts =[
         name:'Name product white',
         price:1500,
         quantity:0,
-        image:'img4.jpg',
+        image:'image/img4.jpg',
         nature:{
             color:'White',
             size:['s','m','l'],
@@ -19,7 +19,7 @@ let listProducts =[
         name:'Name product grey',
         price:500,
         quantity:20,
-        image:'img6.jpg',
+        image:'image/img6.jpg',
         nature:{
             color:'Grey',
             size:['s','m','l'],
@@ -31,7 +31,7 @@ let listProducts =[
         name:'Name product brown',
         price:2000,
         quantity:20,
-        image:'img5.jpg',
+        image:'image/img5.jpg',
         nature:{
             color:'Brown',
             size:['s','m','l'],
@@ -43,7 +43,7 @@ let listProducts =[
         name:'Name product blue',
         price:2500,
         quantity:20,
-        image:'img3.jpeg',
+        image:'image/img3.jpeg',
         nature:{
             color:'Blue',
             size:['s','m','l'],
@@ -55,7 +55,7 @@ let listProducts =[
         name:'Name product black-white',
         price:3000,
         quantity:20,
-        image:'img2.jpg',
+        image:'image/img2.jpg',
         nature:{
             color:['Black','White'],
             size:['s','m','l'],
@@ -67,7 +67,7 @@ let listProducts =[
         name:'Name product white',
         price:4000,
         quantity:20,
-        image:'img1.jpg',
+        image:'image/img1.jpg',
         nature:{
             color:'White',
             size:['s','m','l'],
@@ -79,7 +79,7 @@ let listProducts =[
         name:'Name product blue',
         price:5000,
         quantity:20,
-        image:'img7.jpg',
+        image:'image/img7.jpg',
         nature:{
             color:'Blue',
             size:['s','m','l'],
@@ -91,7 +91,7 @@ let listProducts =[
         name:'Name product red',
         price:4500,
         quantity:20,
-        image:'img9.jpg',
+        image:'image/img9.jpg',
         nature:{
             color:'Red',
             size:['s','m','l'],
@@ -103,7 +103,7 @@ let listProducts =[
         name:'Name product brown',
         price:5500,
         quantity:20,
-        image:'img8.jpg',
+        image:'image/img8.jpg',
         nature:{
             color:'Brown',
             size:['s','m','l'],
@@ -115,7 +115,7 @@ let listProducts =[
         name:'Name product white',
         price:7000,
         quantity:20,
-        image:'img10.jpg',
+        image:'image/img10.jpg',
         nature:{
             color:'White',
             size:['s','m','l'],
@@ -127,7 +127,7 @@ let listProducts =[
         name:'Name product green',
         price:800,
         quantity:20,
-        image:'img12.jpeg',
+        image:'image/img12.jpeg',
         nature:{
             color:'Green',
             size:['s','m','l'],
@@ -139,7 +139,7 @@ let listProducts =[
         name:'Name product grey',
         price:1000,
         quantity:20,
-        image:'img11.jpg',
+        image:'image/img11.jpg',
         nature:{
             color:'Grey',
             size:['s','m','l'],
@@ -216,8 +216,9 @@ filter.addEventListener('submit',function(event){
     showProduct(productFilter);
 });
 document.getElementById('clear').addEventListener("click", function() {
-    if(listProducts){
-        []
-    }
+   
+    filter.value = "";
+    //categoryFilter.value = "";
+
     
 });

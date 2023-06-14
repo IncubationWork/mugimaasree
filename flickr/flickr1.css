@@ -39,7 +39,7 @@ header{
     opacity: 0.8;
 }
 .image1{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -150px -96px; 
     width: 48px;
     height: 46px;
@@ -49,7 +49,7 @@ header{
     top: 7%;
 }
 .image2{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -195px -97px; 
     width: 48px;
     height: 46px;
@@ -59,7 +59,7 @@ header{
     top:7%;
 }
 .logo{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: 0px -231px; 
     width: 152px;
     height: 52px;
@@ -136,7 +136,7 @@ form{
     right:20%;
 }
 .search-icon{
-background-image: url(image.png);
+background-image: url(image/image.png);
 background-position: -472px -327px; 
 width: 22px;
 height: 20px;
@@ -174,7 +174,7 @@ border: none;
     display: flex;
 }
 .image3{
-background-image: url(image.png);
+background-image: url(image/image.png);
 background-position: -412px -441px; 
 width: 31px;
 height: 36px;
@@ -183,7 +183,7 @@ left:81%;
 top:15%;
 }
 .image4{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -496px -419px; 
     width: 29px;
     height: 23px;
@@ -192,7 +192,7 @@ top:15%;
     left: 83.7%;
 }
 .image5{
-    background-image: url(image1.png);
+    background-image: url(image/image1.png);
     transform: scale(.7);
     place-self: center;
     position: absolute;
@@ -387,28 +387,28 @@ nav{
     cursor: pointer;
 }
 .image-box1{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -381px -447px; 
     width: 31px;
     height: 21px;
     border-radius: 3px;
 }
 .image-box2{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -282px -448px; 
     width: 33px;
     height: 20px;
     border-radius: 3px
 }
 .image-box3{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -314px -448px; 
     width: 33px;
     height: 21px;
     border-radius: 3px;
 }
 .image-box4{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -347px -448px; 
     width: 33px;
     height: 21px;
@@ -430,7 +430,7 @@ nav{
 
 }
 .setting{
-background-image: url(image.png);
+background-image: url(image/image.png);
 background-position: -405px -316px; 
 width: 21px;
 height: 19px;
@@ -1125,7 +1125,7 @@ main
 }
 .left-image1
 {
-    background-image:url(image.png);
+    background-image:url(image/image.png);
     background-position: -525px -106px; 
     cursor: pointer;
     width: 14px;
@@ -1142,7 +1142,7 @@ main
 }
 .left-image2
 {
-    background-image:url(image.png);
+    background-image:url(image/image.png);
     background-position: -525px -106px; 
     width: 14px;
     cursor: pointer;
@@ -1159,7 +1159,7 @@ main
 }
 .right-image3
 {
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -493px -465px; 
     width: 25px;
     height: 18px;
@@ -1182,7 +1182,7 @@ main
 }
 .right-image4
 {
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -525px -106px; 
     width: 14px;
     cursor: pointer;
@@ -1200,7 +1200,7 @@ main
 }
 .right-image5
 {
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -221px -511px; 
     width: 16px;
     cursor: pointer;
@@ -1212,7 +1212,7 @@ main
   }
 .right-image6
 {
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -189px -475px; 
     width: 19px;
     cursor: pointer;
@@ -1224,7 +1224,7 @@ main
   }
 .right-image7
 {
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -226px -475px; 
     width: 19px;
     height: 19px;
@@ -1424,20 +1424,20 @@ main
     gap:5px;
 }
 .star{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -316px -253px; 
     width: 21px;
     height: 19px;
 }
 .comment{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -317px -494px; 
     width: 17px;
     height: 18px;
     
 }
 .plus_box{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -130px -479px; 
     width: 17px;
     height: 14px;
@@ -1535,7 +1535,7 @@ main
     align-items: flex-start;
 }
 .more{
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -501px -6px; 
     width: 20px;
     height: 6px;
@@ -1820,7 +1820,7 @@ main
     }
     .sub-word-image{
         display: flex;
-        background-image: url(image.png);
+        background-image: url(image/image.png);
         background-position: -540px -485px; 
         width: 17px;
         height: 8px;
@@ -1968,7 +1968,7 @@ main
     right:20%;
 }
 .search-icon{
-background-image: url(image.png);
+background-image: url(image/image.png);
 background-position: -468px -306px; 
 width: 28px;
 height: 21px;
@@ -2007,7 +2007,7 @@ border: none;
 }
 .cross{
     visibility:hidden;
-    background-image: url(image.png);
+    background-image: url(image/image.png);
     background-position: -536px -141px; 
    width: 21px;
    height: 16px;
