@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toll booth</title>
+</head>
+<style type="text/css">
+    body{
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+    }
+.road{
+
+    height: 100%;
+    width: 100%;
+}
+#car{
+    position: absolute;
+    right:0;
+    bottom:-7%;
+    animation: car 8s linear infinite;
+
+}
+#car2{
+    position: absolute;
+    left:0;
+    bottom:-28%;
+    animation: car 8s linear infinite;
+}
+</style>
+<body>
+    <div class="container">
+        <img src="road.jpg" class="road">
+    </div>
+    <div id="car">
+        <img src="pic45.png" width="200px" id="redcar">
+    </div>
+    <div id="car2">
+        <img src="pic43.png" width="200px" id="redcar">
+    </div>
+    <script>
+        var run=setInterval(car,30);
+        margin=0;
+        function car(){
+            if(margin==Infinity){
+                clearInterval=(run);
+            }
+            else{
+            margin+=5;
+            var x=document.getElementById('redcar');
+            x.style.marginRight=margin+"px";
+        }
+    }
+    var run2=setInterval(car2,30);
+        margin2=0;
+        function car2(){
+            if(margin==1110){
+                clearInterval=(run2);
+            }
+            else{
+            margin2+=5;
+            var x=document.getElementById('redcar');
+            x.style.marginRight=margin2+"px";
+        }
+    }
+    </script>
+</body>
+</html>
