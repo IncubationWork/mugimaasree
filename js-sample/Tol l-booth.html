@@ -11,6 +11,7 @@
         overflow: hidden;
         height: 100vh;
         width: 100vw;
+        box-sizing: border-box;
     }
 .road{
 
@@ -28,7 +29,7 @@
     position: absolute;
     left:0;
     bottom:-28%;
-    animation: car 8s linear infinite;
+    animation: car2 8s linear infinite;
 }
 </style>
 <body>
@@ -39,7 +40,7 @@
         <img src="pic45.png" width="200px" id="redcar">
     </div>
     <div id="car2">
-        <img src="pic43.png" width="200px" id="redcar">
+        <img src="pic43.png" width="200px" id="redcar2">
     </div>
     <script>
         var run=setInterval(car,30);
@@ -57,13 +58,13 @@
     var run2=setInterval(car2,30);
         margin2=0;
         function car2(){
-            if(margin==1110){
+            if(margin2==Infinity){
                 clearInterval=(run2);
             }
             else{
             margin2+=5;
-            var x=document.getElementById('redcar');
-            x.style.marginRight=margin2+"px";
+            var x2=document.getElementById('redcar2');
+            x2.style.marginLeft=margin2+"px";
         }
     }
     </script>
