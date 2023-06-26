@@ -7,6 +7,8 @@ let carList=[
         bookingNo:1,
         carNumber:"TN-3456",
         carAvailable:4,
+        carcolor:"red",
+        numberofSites:8,
         carRentu:{
             retalTime:"24 hours",
             rentalPrice:2000,
@@ -39,7 +41,7 @@ let carList=[
     carModel:"Hyundai Creta",
     bookingNo:4,
     carAvailable:4,
-    carNumber:"TN-3459",
+    carNumber:"TN-3459", 
     carRentu:{
         retalTime:"24 hours",
         rentalPrice:2500,
