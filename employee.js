@@ -6,16 +6,16 @@ class Person{
             this.sex=sex;
         }
     getVoiceType(){
-            if(this.age>50 && this.sex==="male")
-                {
-                    return "hoarse";
-                }
-            else if (this.age<18 && this.sex==="male")
-                {
-                    return "soft";
-                }
+        if(this.age>50 && this.sex==="male")
+            {
+                return "hoarse";
+            }
+        else if (this.age<18 && this.sex==="male")
+            {
+                return "soft";
             }
         }
+    }
 class Employee extends Person{
     constructor(name,age,sex,id)
         {
