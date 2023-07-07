@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="car-Rental.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container" id="home">
+
+        <header>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+            <div class="header">
+                <img src="image/carLogo.gif" alt="logo" class="logo">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <form class="box" action="car-booking.html">
+                    <select id="car-list" class="car">
+                        <option>Select car type</option>
+                    </select>
+                    <div class="input-box">
+                        <label for=""><i class='bx bxs-map'></i>Location</label>
+                        <input type="text" name="text" id="location" placeholder="Enter the place" required>
+                    </div>
+                    <div class="input-box">
+                    <label for=""><i class='bx bxs-calendar'></i>Pick-up</label>
+                        <input type="date" name="date" id="pickup" required>&nbsp;
+                        <input type="time" name="time" id="pickupt" required>
+                    </div>
+                    <div class="input-box">
+                        <label for=""><i class='bx bxs-calendar'></i>Drop-of</label>
+                        <input type="date" name="rdate" id="return" required>&nbsp;
+                        <input type="time" name="time" id="returnt" required>
+                    </div>
+                    <button type="submit" name="submit" id="sub-btn" class="btn" onclick="book()">CONTINUE CAR BOOKING</button>
+                    </form>
+                <div class="image">
+                    <div class="head">
+                        <h2>GET 15% OFF YOUR RENTAL</h2>
+                        <p>Plan your trip now</p>
+                    </div>
+                    <div class="img-head">
+                        <img src="image/car2.png" alt="car-image">
+                    </div>
+                </div> 
+            </div>
+        </main>
+    </div>
+    <section id="service" class="service">
+        <div class="s-title">
+       <h2>Car Rental Service</h2>
+       </div>
+       <div class="list-service">
+
+       </div>
+    </section>
+    <section id="about">
+        <div class="about-head">
+            <h3>About Us</h3>
+            <h1>Best Customer Experience</h1>
+        </div>
+        <div class="about-con">
+            <div class="about-cont">
+                <img src="image/car10.png" alt="" class="about-image">
+                <div class="about-para">
+                    <h4>About Us</h4>
+                    <pre>Enterprise Rent-A-Car is an ongoing American success story. Our guiding
+principles, and humble beginning, revolve around personal honesty and
+integrity. We believe in strengthening our communities one neighborhood at 
+a time, serving our customers as if they were our family, and rewarding hard
+work. These things are as true today as they were when we were founded in 1957.
+Today, our massive network means Enterprise is the largest transportation 
+solutions provider. We offer car and truck rentals, as well as car sharing and 
+car sales. We're there when you need us with over 8,000 locations 
+worldwide. 
+We take an active role in sustainability, not only because it's smart for our 
+business, but because we believe in making the world a better place for 
+future generations. Because of our size, we are in a unique position to foster 
+innovation, advance research and test market-driven solutions.
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <h1 class="con-head">Contact Us</h1>
+            <div class="info">
+                <P class="par">You have any questions or need additional information?</P>
+                <pre><span>Address:</span> Car|Rental / 3861 Sepulveda Blvd. / Culver City, CA 90230</pre>
+            </div>
+            <form class="feedback" id="feedback">
+                <div class="form-control">
+                    <input type="text"  class="name input" placeholder="Name" id="username" required>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                <input type="tel" name="phone" class="phone input" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your phone number" id="phone" required>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="email" class="email input" id="email" placeholder="ff@gmail.com" required>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                <textarea name="text" class="input" id="text2" cols="30" rows="7" placeholder="Enter Your Feedback" required></textarea>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Message</small></div>
+                <div class="btt">
+                    <button type="submit" class="button" onclick="verify();">SUBMIT MESSAGE</button>
+                </div>
+            </form>
+        </div>
+    </section> 
+    <script src="car-Rental.js"></script>
+</body>
+</html>
