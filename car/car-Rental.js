@@ -7,9 +7,9 @@ fetch("car.json")
   .then(response => response.json())
   .then(data => {
     
-    data.carList.forEach(({ carId, carBrand}) => {
+    data.carList.forEach(({carBrand}) => {
       const option = document.createElement("option");
-      option.value = carId;
+      option.value = carBrand;
       option.textContent = carBrand;
       dropdown.appendChild(option);
     });
@@ -29,7 +29,7 @@ fetch("car.json")
         <h3 class="available">CarAvailable: ${carAvailable}</h3></div>
         <div class="price">
         <h2>NumbarofSites: ${numberofSites}</h2>
-        <h2>Price: ${carRent.rentalPrice}
+        <h2 id="car-">Price: ${carRent.rentalPrice}
         <span>/month</span></div>
         </h2>
         <button onclick="cheak();" class="rent">Rent Now</button>
@@ -107,6 +107,24 @@ function isEmail(email) {
 
 
 function book() {
+
+  var textVlue = document.getElementById("car-list").value;
+  var textvlue2 = document.getElementById("location").value;
+  var textvlue3 = document.getElementById("pickup").value;
+  var textvlue4 = document.getElementById("pickupt").value;
+  var textvlue5 = document.getElementById("return").value;
+  var textvlue6 = document.getElementById("returnt").value;
+  var textvlue7 = document.getElementById("returnt").value;
+
+
+  localStorage.setItem("passValue",textVlue);
+  localStorage.setItem("location",textvlue2);
+  localStorage.setItem("pickup",textvlue3);
+  localStorage.setItem("pickupt",textvlue4);
+  localStorage.setItem("return",textvlue5);
+  localStorage.setItem("returnt",textvlue6);
+
+
   const dropdown = document.getElementById("car-list").value;
   const location = document.querySelector("#location").value;
   const pickup = document.querySelector("#pickup").value;
@@ -129,4 +147,6 @@ function book() {
   document.querySelector("#pickupt").value="";
   document.querySelector("#return").value="";
   document.querySelector("#returnt").value="";
+
+  
 }
