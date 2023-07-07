@@ -645,4 +645,7 @@ flex-direction: column;
 .logo{
     display: none;
 }
+.main{
+    width: 100%;
+}
 }
