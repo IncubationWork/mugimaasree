@@ -648,4 +648,7 @@ flex-direction: column;
 .main{
     width: 100%;
 }
+.image{
+    display: none;
+}
 }
