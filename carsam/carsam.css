@@ -463,10 +463,10 @@ padding: 50px 40px;
         font-size: 10px;
     }
     .services-container{
-        width: 100%;
-    }
-    .services-container .box{
         width: 80%;
+    }
+    .box{
+        width: 70%;
     }
     .logo{
         display: none;
