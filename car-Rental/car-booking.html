@@ -63,7 +63,6 @@
         <label>Pickup-Time</label> <span id = "res-pickupt"></span>
         <label>Return-Date</label> <span id = "res-return"></span>
         <label>Return-Time</label> <span id = "res-returnt"></span>
-        <label>Price</label> <span id = "res-price"></span>
 
         <button onclick="booked()">BOOKING</button>
     </div>
@@ -78,7 +77,6 @@
     document.getElementById("res-pickupt").innerHTML=localStorage.getItem("pickupt");
     document.getElementById("res-return").innerHTML=localStorage.getItem("return");
     document.getElementById("res-returnt").innerHTML=localStorage.getItem("returnt");
-    document.getElementById("res-price").innerHTML=localStorage.getItem("price");
 
    function booked() {
        
