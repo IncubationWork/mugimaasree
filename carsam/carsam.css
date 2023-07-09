@@ -466,7 +466,10 @@ padding: 50px 40px;
         width: 80%;
     }
     .box{
-        width: 70%;
+        width: 80%;
+    }
+    .services{
+        width: 100%;
     }
     .logo{
         display: none;
