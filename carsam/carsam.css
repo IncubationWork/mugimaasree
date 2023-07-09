@@ -460,10 +460,10 @@ padding: 50px 40px;
         width: 100%;
     }
     .info{
-        font-size: 15px;
+        font-size: 10px;
     }
     .services-container{
-        width: 100%;
+        width: 80%;
     }
     .services-container .box{
         width: 80%;
@@ -484,11 +484,6 @@ padding: 50px 40px;
     }
     .logo img{
         width: 30px;
-    }
-    .header-btn .sign-in{
-        padding: 7px 10px;
-        font-size: 14px;
-        font-weight: 400;
     }
     .text h1{
         font-size: 2rem;
