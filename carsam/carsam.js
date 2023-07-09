@@ -18,10 +18,7 @@ fetch("car.json")
     let car = ''; 
 
     data.carList.forEach(({carId,carBrand,carRent,carAvailable,numberofSites})=>{
-      car += `
-     
-           
-               <div class="box">
+      car += `<div class="box">
                     <div class="box-img">
                         <img src="${carRent.image.url}">
                     </div>
@@ -37,9 +34,7 @@ fetch("car.json")
                     </div>
                     </h2>
                     <button onclick="cheak();" class="rent">Rent Now</button>
-                </div>
-            `;
-
+                </div>`;
     });
 
 
