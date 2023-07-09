@@ -215,7 +215,6 @@ label{
 }
 .services-container .box p{
     padding: 0 10px;
-    border: 1px solid var(--text-color);
     width:58px;
     border-radius: 0.5rem;
     margin: 1rem 0 1rem;
@@ -226,13 +225,11 @@ label{
 .services-container .box h2{
     font-size: 1.1rem;
     font-weight: 600;
-    color:var(--main-color);
     margin: 0.2rem 0 0.5rem;
 }
 .services-container .box h2 span{
     font-size: 0.8rem;
     font-weight: 500;
-    color: var(--text-color);
 }
 .services-container .box .btn{
     display: flex;
@@ -241,9 +238,6 @@ label{
     color:#fff;
     padding: 10px;
     border-radius:0.5rem;
-}
-.services-container .box .btn:hover{
-    background:var(--main-color);
 }
 .about{
     background-color: whitesmoke;
@@ -517,7 +511,7 @@ padding: 50px 40px;
         width: 100%;
     }
     .box{
-        width: 80%;
+        width: 100%;
     }
     .services{
         width: 100%;
