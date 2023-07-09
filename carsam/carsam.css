@@ -463,7 +463,9 @@ padding: 50px 40px;
         font-size: 10px;
     }
     .services-container{
-        width: 80%;
+        grid-template-columns: repeat(auto-fit,minmax(254px,auto));
+
+        width: 100%;
     }
     .box{
         width: 80%;
