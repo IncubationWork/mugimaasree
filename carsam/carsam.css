@@ -421,13 +421,10 @@ padding: 50px 40px;
 }
  @media(max-width:768px){
     header{
-        padding: 11px 40px;
+        padding: 5px 30px;
     }
     section{
         padding: 110px 40px;
-    }
-    .home{
-        grid-template-columns: 1fr;
     }
     .form-container form{
         position: unset;
@@ -449,6 +446,9 @@ padding: 50px 40px;
         width: 100%;
 
     }
+    .btn{
+        font-size: 15px;
+    }
     .about-img{
         padding: 1rem;
         order:2;
@@ -463,7 +463,7 @@ padding: 50px 40px;
         font-size: 10px;
     }
     .services-container{
-        width: 80%;
+        width: 100%;
     }
     .services-container .box{
         width: 80%;
@@ -477,7 +477,7 @@ padding: 50px 40px;
 } 
 @media(max-width:350px){
     header{
-        padding: 10px 14px;
+        padding: 5px 10px;
     }
     section{
         padding: 50px 14px;
