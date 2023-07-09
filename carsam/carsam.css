@@ -399,6 +399,49 @@ span{
     color: #ffbf00;
     font-weight: 700;
 }
+.car-detail{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.fuel{
+    font-weight: 800;
+    color: rgba(255, 68, 0, 0.692);
+
+}
+.available{
+    color: rgba(255, 68, 0, 0.692);
+    
+}
+.brand{
+    color: navy;
+    text-align: center;
+    font-weight: 800;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:rgba(255, 68, 0, 0.737);
+}
+.rent{
+    background-color:#474fa0;
+    display: flex;
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    border-radius:10px;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+.rent:hover{
+    background-color: orangered;
+}
  @media (max-width:991px){
     header{
         padding: 18px 40px;
