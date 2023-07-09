@@ -419,7 +419,7 @@ padding: 50px 40px;
         width: 100%;
     }
 }
- @media(max-width:768px){
+ @media(max-width:600px){
     header{
         padding: 5px 30px;
     }
