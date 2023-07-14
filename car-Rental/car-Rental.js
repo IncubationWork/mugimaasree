@@ -1,12 +1,12 @@
 const dropdown = document.getElementById("car-list");
 const section = document.getElementById("contact");
 const list = document.querySelector(".services-container");
-
+var carListData = null;
 
 fetch("car.json")
   .then(response => response.json())
   .then(data => {
-    
+    carListData = data;
     data.carList.forEach(({carBrand}) => {
       const option = document.createElement("option");
       option.value = carBrand;
@@ -51,11 +51,26 @@ fetch("car.json")
     window.location.href="#home";
   }
 
+  const startDateInput = document.getElementById("pickup");
+  const endDateInput = document.getElementById("return");
 
+  
+  const today = new Date().toISOString().split('T')[0];
+
+  
+  startDateInput.setAttribute('min', today);
+
+  
+  startDateInput.addEventListener('input', function() {
+    endDateInput.setAttribute('min', this.value);
+    if (endDateInput.value < this.value) {
+      endDateInput.value = '';
+    }
+  });
 
 
 function book() {
-
+ // console.log((e.carType.current).value);
   var textVlue = document.getElementById("car-list").value;
   var textvlue2 = document.getElementById("location").value;
   var textvlue3 = document.getElementById("pickup").value;
@@ -86,7 +101,7 @@ function book() {
     return false;
   } else {
     true;
-    window.location = "car-booking.html";
+      window.location = "car-booking.html";
   }
 
   document.querySelector("#location").value="";
@@ -100,7 +115,7 @@ function book() {
 
 
 
-
+console.log(carListData);
 
 
 
