@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Select List</h1>
+  <div class="checklist">
+  <ul>
+    <li *ngFor = "let sub of subs"  [ngClass]="{'Checked': isCheckedSubs[sub] }" (click)="toggleCheck(sub)">{{sub}}
+      <span class="tic" *ngIf="isCheckedSubs[sub]">&#10003;</span>
+    </li>
+  </ul>
+  </div> 
+</div> 
+
+
+<app-sub [selectedSubs]="selectedSubs"></app-sub>
