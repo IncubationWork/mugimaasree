@@ -23,7 +23,6 @@ export class AppComponent {
     const targetElement = event.target as HTMLElement;
     if(!targetElement.closest('.input'))  {
     this.show=false;
-
     }
   }
 }
