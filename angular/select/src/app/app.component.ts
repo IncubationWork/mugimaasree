@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'select';
+  listOptions:string[] = ['Tamil','English','Maths','Science','Social']
+  inputOption : string = '';
+
+  onOptionSelected(option:string) {
+    this.inputOption = option;
+  }
 }
+
