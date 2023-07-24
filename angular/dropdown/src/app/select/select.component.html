@@ -1,0 +1,3 @@
+<div class="list">
+<div *ngFor="let subject of listSubject | filter: selectedSub" class="listsub" (click)="onSubClick(subject)">{{ subject }}</div>
+</div>

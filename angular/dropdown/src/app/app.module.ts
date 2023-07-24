@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
+import { SelectComponent } from './select/select.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DropdownComponent,
+    SelectComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -19,6 +21,3 @@ import { DropdownComponent } from './dropdown/dropdown.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
-

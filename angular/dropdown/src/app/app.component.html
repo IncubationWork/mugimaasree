@@ -1,0 +1,4 @@
+<h2>Angular Dropdown</h2>
+    <input class="input" [ngClass]="{'active': show}" (click)="toggleList()" [(ngModel)]="selectedSub">
+    <span>&#9660;</span>
+    <app-select *ngIf="show" [selectedSub]="selectedSub" (subjectSelected)="selectSub($event)"></app-select>
