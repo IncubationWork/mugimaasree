@@ -3,28 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-app-input{
+
+app-input {
     height:850px;
     width:1fr;
     background-color: rgba(0, 0, 255, 0.168);
     grid-row: 1;
     grid-column: 1;
 }
-app-output{
+
+app-output {
     height:100%;
     width: 1fr;
     background-color: aqua;
     grid-column: 3;
     grid-row: 1;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
-    
 }
-.button{
+
+.button {
     height: 40px;
     width: 100px;
     grid-column:2;
@@ -34,10 +37,12 @@ app-output{
     color: white;
     font-size: 20px;
 }
-.button:hover{
+
+.button:hover {
     background-color: green;
 }
-.container.blur{
+
+.container.blur {
     pointer-events: none;
     filter: blur(2px);
 }

@@ -6,9 +6,9 @@ import { BoxService, Box } from '../box.service';
   templateUrl: './output.component.html',
   styleUrls: ['./output.component.css']
 })
-export class OutputComponent  {
-  
 
+export class OutputComponent {
+  
   constructor(public boxService: BoxService) {}
 
   onDeleteBox(box: Box) {

@@ -1,8 +1,9 @@
-p{
+p {
   color: navy;
   font-size: 25px;
   text-align: center;
 }
+
 .create {
   position: relative;
   width: 100%;
@@ -15,6 +16,7 @@ p{
   height: 20px;
   background-color:red; 
 }
-.selected{
+
+.selected {
   background-color: yellow;
 }

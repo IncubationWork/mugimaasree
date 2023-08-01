@@ -10,11 +10,11 @@ export interface Box {
 @Injectable({
   providedIn: 'root'
 })
+
 export class BoxService {
   private boxesNew = new BehaviorSubject<Box[]>([]);
   public createbox = this.boxesNew.asObservable();
-
-
+  
   constructor() {}
 
   addBoxes(box: Box) {
@@ -36,5 +36,4 @@ export class BoxService {
   getBoxes(): Box[] {
     return this.boxesNew.getValue();
   }
-  
 }

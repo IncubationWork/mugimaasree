@@ -7,8 +7,10 @@ import { Location } from '@angular/common';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css']
 })
+
 export class InputComponent {
   selectedBox: Box | null = null; 
+
   constructor(public boxService: BoxService,private location: Location,) {}
 
   onCreateBox(event: MouseEvent) {
@@ -19,7 +21,7 @@ export class InputComponent {
     const x = event.clientX - containerRect.left;
     const y = event.clientY - containerRect.top;
 
-   if (x < 0 || y < 0 || x + boxSize > containerRect.width || y + boxSize > containerRect.height) {
+    if (x < 0 || y < 0 || x + boxSize > containerRect.width || y + boxSize > containerRect.height) {
       return;
     }
 
@@ -31,14 +33,10 @@ export class InputComponent {
 
     this.boxService.addBoxes(newBox);
     this.location.go(`/input/x=${x}&y=${y}`);
-    
   }
-
-  
 
   onDeleteBox(box: Box) {
     this.boxService.deleteBox(box);
-    
   }
 
   checkOverlapping(newBox: Box, boxes: Box[]): boolean {

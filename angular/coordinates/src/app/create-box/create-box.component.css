@@ -1,4 +1,4 @@
- .container{
+.container {
     height: 230px;
     width: 400px;
     border: 2px solid black;
@@ -12,31 +12,35 @@
     top: -850px;
     left:700px;
     z-index: 1;
-    
 }
-label{
+
+label {
     font-weight: 600;
 }
-input{
+
+input {
     height: 20px;
     font-size: 20px;
 }
-button{
+
+button {
     background-color: green;
     color: white;
     height: 30px;
 }
-button:hover{
+
+button:hover {
     background-color: gray;
 
 }
-button:focus{
+
+button:focus {
     background-color: red;
-} 
-.gross{
+}
+
+.gross {
     position: absolute;
     left:95%;
     top:-5%;
-    
 }
 
