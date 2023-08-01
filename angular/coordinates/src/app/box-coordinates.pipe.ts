@@ -8,6 +8,7 @@ interface Box {
 @Pipe({
   name: 'boxCoordinates'
 })
+
 export class BoxCoordinatesPipe implements PipeTransform {
 
   transform(box: Box): string {

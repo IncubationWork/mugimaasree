@@ -25,4 +25,5 @@ import { CreateBoxComponent } from './create-box/create-box.component';
   providers: [BoxService], 
   bootstrap: [AppComponent]
 })
+
 export class AppModule {}
