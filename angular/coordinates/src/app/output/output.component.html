@@ -1,0 +1,6 @@
+<div class="OutputContainer">
+  <p>Output</p>
+    <div class="display" *ngFor="let box of boxService.createbox | async">
+      {{ box | boxCoordinates }}&nbsp;<button (click)="onDeleteBox(box)">Delete</button>
+    </div>
+</div>
