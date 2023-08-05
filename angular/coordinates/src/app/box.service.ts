@@ -5,6 +5,7 @@ export interface Box {
   x: number;
   y: number;
   size:number;
+  
 }
 
 @Injectable({
@@ -14,8 +15,19 @@ export interface Box {
 export class BoxService {
   private boxesNew = new BehaviorSubject<Box[]>([]);
   public createbox = this.boxesNew.asObservable();
+
+  private selectedBoxSource = new BehaviorSubject<Box | null>(null);
+  selectedBox$ = this.selectedBoxSource.asObservable();
   
-  constructor() {}
+  constructor() {
+  const defaultBoxes:Box[]=[
+    {x:20,y:30,size:20},
+    {x:157,y:140,size:20},
+    {x:202,y:300,size:20},
+    {x:403,y:219,size:20},
+    {x:18,y:100,size:20}];
+  this.boxesNew.next(defaultBoxes);
+  }
 
   addBoxes(box: Box) {
     const boxes = this.boxesNew.getValue();
@@ -35,5 +47,8 @@ export class BoxService {
    
   getBoxes(): Box[] {
     return this.boxesNew.getValue();
+  }
+  setSelectedBox(box: Box | null) {
+    this.selectedBoxSource.next(box);
   }
 }

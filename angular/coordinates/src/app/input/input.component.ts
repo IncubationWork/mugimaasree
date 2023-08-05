@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { BoxService,Box } from '../box.service';
 import { Location } from '@angular/common';
 
@@ -9,9 +9,14 @@ import { Location } from '@angular/common';
 })
 
 export class InputComponent {
-  selectedBox: Box | null = null; 
 
-  constructor(public boxService: BoxService,private location: Location,) {}
+  @Output() selectedBox: Box | null = null; 
+
+  constructor(public boxService: BoxService,private location: Location) {
+    this.boxService.selectedBox$.subscribe((selectedBox: Box | null) => {
+      this.selectedBox = selectedBox;
+    });
+  }
 
   onCreateBox(event: MouseEvent) {
     const container = document.querySelector('.create') as HTMLElement;
@@ -37,6 +42,7 @@ export class InputComponent {
 
   onDeleteBox(box: Box) {
     this.boxService.deleteBox(box);
+    
   }
 
   checkOverlapping(newBox: Box, boxes: Box[]): boolean {
@@ -52,6 +58,15 @@ export class InputComponent {
   }
   
   toggleBorder(box: Box) {
-    this.selectedBox = this.selectedBox === box ? null : box;
+    if (this.selectedBox === box) {
+      
+      this.selectedBox = null;
+    } else {
+      
+      this.selectedBox = box;
+    }
+    this.boxService.setSelectedBox(this.selectedBox);
+    this.boxService.updateBoxList(this.boxService.getBoxes());
+  
   }
 }

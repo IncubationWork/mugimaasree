@@ -14,5 +14,4 @@ export class BoxCoordinatesPipe implements PipeTransform {
   transform(box: Box): string {
     return `XCoordinates : ${box.x}, YCoordinates : ${box.y}`;
   }
-
 }

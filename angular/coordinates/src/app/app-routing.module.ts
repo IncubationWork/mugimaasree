@@ -4,7 +4,7 @@ import { InputComponent } from './input/input.component';
 import { CreateBoxComponent } from './create-box/create-box.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'input', pathMatch: 'full' },
+  { path: '', redirectTo: '/input', pathMatch: 'full' },
   { path: 'input', component: InputComponent },
   { path: 'create-box', component: CreateBoxComponent },
 ];

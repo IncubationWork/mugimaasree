@@ -8,6 +8,7 @@ import { BoxService } from './box.service';
 import { FormsModule } from '@angular/forms';
 import { BoxCoordinatesPipe } from './box-coordinates.pipe';
 import { CreateBoxComponent } from './create-box/create-box.component';
+import { DisplayboxComponent } from './displaybox/displaybox.component';
 
 @NgModule({
   declarations: 
@@ -15,7 +16,7 @@ import { CreateBoxComponent } from './create-box/create-box.component';
       InputComponent, 
       OutputComponent, 
       BoxCoordinatesPipe, 
-      CreateBoxComponent
+      CreateBoxComponent, DisplayboxComponent
     ],
   imports: 
     [ BrowserModule,

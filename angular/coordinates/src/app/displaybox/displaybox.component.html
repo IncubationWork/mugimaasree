@@ -1,0 +1,4 @@
+<div class="box" [class.selected]="box === selectedBox" (click)="toggleBorder(box)">
+    XCoordinates: {{ box.x }}, YCoordinates: {{ box.y }}
+    <button (click)="onDelete()">Delete</button>
+</div>

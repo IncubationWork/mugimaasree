@@ -1,5 +1,5 @@
 <p>Input</p>
 <div class="create" (dblclick)="onCreateBox($event)">
   <div *ngFor="let box of boxService.createbox| async" class="createbox"  [ngStyle]="{ 'left.px': box.x, 'top.px': box.y }" [class.selected]="box === selectedBox"
-  (click)="toggleBorder(box)"></div>
+  (click)="toggleBorder(box)" [routerLink]="['/input',{x:box.x,y:box.y}]"></div>
 </div>
