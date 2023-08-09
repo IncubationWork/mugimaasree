@@ -17,6 +17,6 @@ p {
   background-color:red; 
 }
 
-.selected {
+.highlight {
   background-color: yellow;
 }

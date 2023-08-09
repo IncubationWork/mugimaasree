@@ -1,6 +1,7 @@
-import { Component, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { BoxService,Box } from '../box.service';
 import { Location } from '@angular/common';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-input',
@@ -10,15 +11,17 @@ import { Location } from '@angular/common';
 
 export class InputComponent {
 
-  @Output() selectedBox: Box | null = null; 
+   selectedBox: Box | null = null; 
+   highlightedBox$:Observable<Box | null>;
 
-  constructor(public boxService: BoxService,private location: Location) {
-    this.boxService.selectedBox$.subscribe((selectedBox: Box | null) => {
-      this.selectedBox = selectedBox;
-    });
+  constructor(public boxService: BoxService,private location: Location){
+    this.highlightedBox$=this.boxService.highlightedBox$;
   }
+  
 
   onCreateBox(event: MouseEvent) {
+    event.preventDefault();
+    event.stopPropagation();
     const container = document.querySelector('.create') as HTMLElement;
     const containerRect = container.getBoundingClientRect();
     const boxSize = 20;
@@ -38,13 +41,23 @@ export class InputComponent {
 
     this.boxService.addBoxes(newBox);
     this.location.go(`/input/x=${x}&y=${y}`);
+
   }
+  preventDoubleClick(event: MouseEvent) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
 
   onDeleteBox(box: Box) {
     this.boxService.deleteBox(box);
     
   }
-
+  handleDeleteKey(event: KeyboardEvent) {
+    if (event.key === 'Delete'&& this.selectedBox) {
+      this.onDeleteBox(this.selectedBox);
+    }
+  }
   checkOverlapping(newBox: Box, boxes: Box[]): boolean {
     for (const box of boxes) {
       const isOverlappingX = newBox.x + newBox.size > box.x && box.x + box.size > newBox.x;
@@ -66,7 +79,6 @@ export class InputComponent {
       this.selectedBox = box;
     }
     this.boxService.setSelectedBox(this.selectedBox);
-    this.boxService.updateBoxList(this.boxService.getBoxes());
   
   }
 }

@@ -8,20 +8,15 @@ import { Box, BoxService } from '../box.service';
 }) 
 
 export class OutputComponent {
-  @Input() selectedBox: Box | null = null;
+selectedBox: Box | null = null;
   
-  constructor(public boxService: BoxService) {
-    this.boxService.selectedBox$.subscribe((selectedBox: Box | null) => {
-      this.selectedBox = selectedBox;
-    });
-  }
+  constructor(public boxService: BoxService) {}
 
   onDeleteBox(box: Box) {
     this.boxService.deleteBox(box);
   }
 
   toggleBorder(box: Box) {
-    this.boxService.updateBoxList(this.boxService.getBoxes());
-    this.boxService.setSelectedBox(box); 
+    this.selectedBox=this.selectedBox===box?null:box;
   }
 }

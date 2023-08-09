@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Box, BoxService } from './box.service';
+import { BoxService } from './box.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,6 @@ export class AppComponent {
   title = 'coordinates';
   boxBlur = false;
   showCreateBoxComponent = false;
-  selectedBox: Box | null = null;
   
   constructor(public boxService: BoxService) {}
 

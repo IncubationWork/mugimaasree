@@ -1,5 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Box } from '../box.service';
+import { Component, Input, OnInit ,  HostListener} from '@angular/core';
+import { Box,BoxService } from '../box.service';
 
 @Component({
   selector: 'app-display-box',
@@ -9,21 +9,36 @@ import { Box } from '../box.service';
 
 export class DisplayboxComponent {
   @Input() box!: Box;
-  @Input() selectedBox: Box | null = null;
-  @Output() delete = new EventEmitter<Box>();
-  @Output()click = new EventEmitter<Box>();
+  @Input() isSelected:boolean=false;
+  isHighlighted:boolean=false;
+
+  constructor(private boxService: BoxService) {}
+
+  ngOnInit(){
+    this.boxService.getSelectedBox().subscribe((selectedBox) =>{
+      this.isSelected=selectedBox===this.box;
+    });
+    this.boxService.highlightedBox$.subscribe((highlightedBox)=>{
+      this.isHighlighted=highlightedBox===this.box;
+    });
+
+  }
+  onBoxClick() {
+    this.isSelected = !this.isSelected;
+    this.boxService.setSelectedBox(this.isSelected?this.box:null);
+    this.toggleHighlight();
+  }
 
   onDelete() {
-    this.delete.emit(this.box);
-  }
+    this.boxService.deleteBox(this.box);
+}
 
-  toggleBorder(box: Box) {
-    this.click.emit(this.box);
-    
-    if (this.selectedBox === box) {
-      this.selectedBox = null;
-    } else {
-      this.selectedBox = box;
-    }
+handleDeleteKey(event: KeyboardEvent) {
+  if (event.key === 'Delete') {
+    this.onDelete();
   }
+}
+toggleHighlight(){
+  this.boxService.toggleBoxHighlight(this.box);
+}
 }

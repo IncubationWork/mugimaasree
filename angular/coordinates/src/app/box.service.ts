@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject,Observable } from 'rxjs';
 
 export interface Box {
   x: number;
@@ -16,8 +16,11 @@ export class BoxService {
   private boxesNew = new BehaviorSubject<Box[]>([]);
   public createbox = this.boxesNew.asObservable();
 
-  private selectedBoxSource = new BehaviorSubject<Box | null>(null);
-  selectedBox$ = this.selectedBoxSource.asObservable();
+  private selectedBoxSubject = new BehaviorSubject<Box | null>(null);
+  public selectedBox$: Observable<Box | null> = this.selectedBoxSubject.asObservable();
+
+  private highlightedBoxSubject = new BehaviorSubject<Box | null>(null);
+  public highlightedBox$: Observable<Box | null> = this.highlightedBoxSubject.asObservable();
   
   constructor() {
   const defaultBoxes:Box[]=[
@@ -49,6 +52,19 @@ export class BoxService {
     return this.boxesNew.getValue();
   }
   setSelectedBox(box: Box | null) {
-    this.selectedBoxSource.next(box);
+    this.selectedBoxSubject.next(box);
+  }
+
+  getSelectedBox(): Observable<Box | null> {
+    return this.selectedBoxSubject.asObservable();
+  }
+
+  toggleBoxHighlight(box: Box) {
+    const highlightedBox = this.highlightedBoxSubject.getValue();
+    if (highlightedBox === box) {
+      this.highlightedBoxSubject.next(null);
+    } else {
+      this.highlightedBoxSubject.next(box);
+    }
   }
 }

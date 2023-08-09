@@ -3,6 +3,7 @@
   <app-display-box 
     *ngFor="let box of boxService.createbox | async" [box]="box" 
     (delete)="onDeleteBox(box)"
-    [selectedBox]="selectedBox" (click)="toggleBorder(box)">
+    [isSelected]="box === selectedBox"
+    [class.highlight]="box===selectedBox" (click)="toggleBorder(box)">
   </app-display-box>
 </div>
