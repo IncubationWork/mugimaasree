@@ -11,9 +11,9 @@ export class WeatherComponent {
   location: string = 'tenkasi';
   weatherData: any;
   showError: boolean = false;
+  count: number = 10;
   
-  filteredLocations!: any[];
-
+  filteredLocations: any[] = [];
   constructor(private weatherService: WeatherService) {}
   
 
@@ -21,6 +21,7 @@ export class WeatherComponent {
     this.search();
   }
 
+  
   getWeather() {
     if (this.location.trim() === '') {
       this.showError = true;
@@ -52,7 +53,7 @@ export class WeatherComponent {
       case 1:
         return 'Mainlyclear';
       case 2:
-        return 'partly cloudy';
+        return 'partlycloudy';
       case 3:
         return 'overcast';
       case 45:

@@ -1,10 +1,14 @@
 <div>
     <h1>Weather Application</h1>
+
     <form>
-      <input type="text" name="cityName" placeholder="Enter a city name" [(ngModel)]="name">
+
+      <input type="text" name="cityName" placeholder="Enter a city name" [(ngModel)]="name" (input)="getWeather()">
+
       <button type="button" (click)="getWeather()">Get Weather</button>
     </form>
     <div *ngIf="weatherData">
+
         <div *ngFor="let result of weatherData.results | filterByName: name">
             <h2>{{ result.name }}</h2></div>
       <h2>{{ weatherData.results[0].name}}</h2>
@@ -18,7 +22,7 @@
   
 
 
- <div class="container">
+ <!-- <div class="container">
     <div class="weather__header">
         <form class="weather__search">
             <input type="text" placeholder="Search for a city..." class="weather__searchform"  [(ngModel)]="name" name="cityName">
@@ -77,3 +81,4 @@
         </div>
     </div>
 
+ -->

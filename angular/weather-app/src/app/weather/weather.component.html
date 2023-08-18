@@ -3,11 +3,13 @@
   <form id="search">
     <input type="text" name="cityName" (focus)="clearLocation()" placeholder="Enter a city name" [(ngModel)]="location"  (keydown.enter)="getWeather()" id="searchInput">
     <button type="button" (click)="search()" class="searchControl">Get Weather</button>
+    
   </form>
   <div class="error-message" *ngIf="showError">Please enter a city name.</div>
+  <div *ngIf="weatherData && weatherData.weather">
+
   <div class="card">
     <img id="weather-image" [src]="getWeatherImage()" alt="Weather Image">
-      <div *ngIf="weatherData">
          <!-- <ul>
       <li *ngFor="let loc of filteredLocations | locationFilter: location">{{ loc.name }}</li>
     </ul> -->
@@ -18,7 +20,6 @@
           <h2>Latitude: <span> {{ weatherData.results[0].latitude }} N</span></h2>
           <h2>Longitude: <span> {{ weatherData.results[0].longitude}} E</span></h2>
         </div>
-        <div *ngIf="weatherData.weather">
           <div class="temp">
             <div><img src="../assets/pic15.png" class="image"><span class="span">{{weatherData.weather.current_weather.temperature}} °C</span></div>
             <div id="humunity"> <img src="../assets/pic14.png" class="image" > <span> {{weatherData.weather.hourly.relativehumidity_2m[0]}} %</span></div>
@@ -30,10 +31,9 @@
           </div>
           <div class="time">
             <div><img id="icon-image" [src]="getWeatherIcon(weatherData.weather.current_weather.weathercode)">
-              <p >Weather:<span class="p"> {{ getWeatherDescription(weatherData.weather.current_weather.weathercode) }}</span></p></div>
-            <p>Time: <span> {{weatherData.weather.current_weather.time}}</span></p>
+              <p ><span class="p"> {{ getWeatherDescription(weatherData.weather.current_weather.weathercode) }}</span></p></div>
+            <p>Time:<span>{{weatherData.weather.current_weather.time}}</span></p>
           </div>  
-      </div>
     </div>
   </div>
 </div>

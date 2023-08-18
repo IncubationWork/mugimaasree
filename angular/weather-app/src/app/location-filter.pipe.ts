@@ -4,17 +4,13 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'locationFilter'
 })
 export class LocationFilterPipe implements PipeTransform {
-  transform(locations: any[], searchText: string): any[] {
-    if (!locations) {
-      return [];
-    }
-    if (!searchText) {
-      return locations;
+  transform(items: any[], searchText: string): any[] {
+    if (!items || !searchText) {
+      return items;
     }
 
     searchText = searchText.toLowerCase();
-    return locations.filter(location => {
-      return location.name.toLowerCase().includes(searchText);
-    });
+
+    return items.filter(item => item.name.toLowerCase().includes(searchText));
   }
 }
