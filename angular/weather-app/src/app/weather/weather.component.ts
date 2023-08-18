@@ -12,7 +12,6 @@ export class WeatherComponent {
   weatherData: any;
   showError: boolean = false;
   
-
   filteredLocations!: any[];
 
   constructor(private weatherService: WeatherService) {}
