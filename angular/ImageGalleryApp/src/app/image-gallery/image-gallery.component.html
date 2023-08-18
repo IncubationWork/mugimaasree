@@ -1,0 +1,5 @@
+<div class="image-gallery">
+    <button (click)="fetchRandomImage()">Fetch Random Image</button>
+    <img *ngIf="imageUrl" [src]="imageUrl" alt="Random Image" />
+  </div>
+  
