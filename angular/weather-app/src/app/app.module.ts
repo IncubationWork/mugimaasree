@@ -7,12 +7,16 @@ import { WeatherComponent } from './weather/weather.component';
 import { WeatherService } from './weather.service';
 import { FormsModule } from '@angular/forms';
 import { LocationFilterPipe } from './location-filter.pipe';
+import { WetherForecastComponent } from './wether-forecast/wether-forecast.component';
+import { LocationListComponent } from './location-list/location-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    LocationFilterPipe
+    LocationFilterPipe,
+    WetherForecastComponent,
+    LocationListComponent,
   ],
   imports: [
     BrowserModule,

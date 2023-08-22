@@ -14,7 +14,6 @@ fetch("car.json")
       dropdown.appendChild(option);
     });
     
-
     let car = ''; 
 
     data.carList.forEach(({carId,carBrand,carRent,carAvailable,numberofSites})=>{
@@ -37,15 +36,8 @@ fetch("car.json")
                 </div>`;
     });
 
-
-  
-
-    list.innerHTML=car;
-
-    
-    console.log(data);
-
-  })
+      list.innerHTML=car;
+    })
 
   function cheak(){
     window.location.href="#home";
@@ -78,14 +70,12 @@ function book() {
   var textvlue5 = document.getElementById("return").value;
   var textvlue6 = document.getElementById("returnt").value;
 
-
   localStorage.setItem("passValue",textVlue);
   localStorage.setItem("location",textvlue2);
   localStorage.setItem("pickup",textvlue3);
   localStorage.setItem("pickupt",textvlue4);
   localStorage.setItem("return",textvlue5);
   localStorage.setItem("returnt",textvlue6);
-
 
   const dropdown = document.getElementById("car-list").value;
   const location = document.querySelector("#location").value;
@@ -109,43 +99,7 @@ function book() {
   document.querySelector("#pickupt").value="";
   document.querySelector("#return").value="";
   document.querySelector("#returnt").value="";
-
-  
 }
-
-
-
-console.log(carListData);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const form=document.getElementById("feedback");
 const username=document.getElementById("username"); 
@@ -170,7 +124,7 @@ form.addEventListener('submit',e =>{
       setSuccess(username);
   }
   if(phoneValue === '') {
-    setError(phone,'Email Cannot Be Blank');
+    setError(phone,'Phonenumber Cannot Be Blank');
   } else{
     setSuccess(phone);
   }
@@ -182,7 +136,7 @@ form.addEventListener('submit',e =>{
   setSuccess(email);
   }
   if(textValue==='') {
-  setError(text,'Username Cannot Be Blank');
+  setError(text,'FeedBack Cannot Be Blank');
   } else {
   setSuccess(text);
   alert("Thank You For Your Feedback");
@@ -204,10 +158,7 @@ form.addEventListener('submit',e =>{
     const small = formControl.querySelector('small');
     formControl.className = 'form-control success';
   }
-
 }
-
-
 
 function isEmail(email) {
     return /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(email);

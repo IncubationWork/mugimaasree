@@ -12,8 +12,9 @@ export class WeatherComponent {
   weatherData: any;
   showError: boolean = false;
   count: number = 10;
-  
+  date=new Date();
   filteredLocations: any[] = [];
+  weeklyTemperatureData: number[] = [];
   constructor(private weatherService: WeatherService) {}
   
 
@@ -37,10 +38,30 @@ export class WeatherComponent {
     );
   }
 
+  searchLocations(inputText: string) {
+    if (inputText.trim() === '') {
+      this.filteredLocations = [];
+      return;
+    }
+
+    this.weatherService.getWeather(inputText)
+      .subscribe((data: any) => {
+        this.filteredLocations = data.results;
+      });
+  }
+  selectCity(city: any) {
+    this.location = city.name;
+    this.filteredLocations = [];
+    this.getWeather();
+  }
+
+
   getTemperature(latitude: number, longitude: number) {
     this.weatherService.getTemperature(latitude, longitude)
       .subscribe(data => {
         this.weatherData.weather = data;
+        this.weeklyTemperatureData = this.weatherData.weather.hourly.temperature_2m.slice(0, 168); // Assuming 24 hours x 7 days
+
       });
   }
   search() {

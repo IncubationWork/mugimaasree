@@ -14,7 +14,7 @@ export class WeatherService {
   }
 
   getTemperature(latitude: number, longitude: number) {
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m`;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m,&daily=uv_index_max&timezone=GMT`;
     return this.http.get(url);
   }
 }

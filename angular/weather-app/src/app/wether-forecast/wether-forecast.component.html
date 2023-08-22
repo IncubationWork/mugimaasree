@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="weekly-forecast" [ngClass]="{'shift-left': shiftLeft, 'shift-right':shiftRight}" >
+      <div class="forecast-box" *ngFor="let day of days; let i=index">
+        <div class="date"><span>{{ forecastDates[i] | date }}</span></div>
+        <div class="day">{{ getCurrentDayName(i) }}</div>
+        <div class="temperature">
+            <div>☀️ <span class="span" *ngIf="weatherData && weatherData.weather">{{ weeklyTemperatureData[i] }} °C</span></div>
+            <div>💧<span class="span" *ngIf="weatherData && weatherData.weather">{{ weatherData.weather.hourly.relativehumidity_2m[i] }} %</span></div>
+           <div> 🌴 <span class="span" *ngIf="weatherData && weatherData.weather">{{ weatherData.weather.current_weather.windspeed }} km/h</span></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
