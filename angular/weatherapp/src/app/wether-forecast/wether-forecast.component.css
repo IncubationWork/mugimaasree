@@ -7,9 +7,6 @@
     gap: 20px;
     
   }
-  
-  
-  
   .weekly-forecast {
     flex-grow: 1;
     padding: 0 20px;
@@ -44,7 +41,6 @@
     font-weight: 500;
     font-size: 20px;
 }
-
 .day{
     color:black;
     font-weight: 500;

@@ -7,9 +7,8 @@
         <div class="temperature">
             <div class="tempa">☀️ <span class="span" *ngIf="weatherData && weatherData.weather">{{ weeklyTemperatureData[i] }} °C</span></div>
             <div class="tempa">💧<span class="span" *ngIf="weatherData && weatherData.weather">{{ weatherData.weather.hourly.relativehumidity_2m[i] }} %</span></div>
-           <div class="tempa"> 🌴 <span class="span" *ngIf="weatherData && weatherData.weather">{{ weatherData.weather.current_weather.windspeed }} km/h</span></div>
-
-        </div>
+           <div class="tempa"> 🌴 <span class="span" *ngIf="weatherData && weatherData.weather">{{ weatherData.weather.hourly.windspeed_10m[i] }} km/h</span></div>
+          </div>
       </div>
     </div>
   </div>
