@@ -3,14 +3,13 @@ EndDate: <input type="date" id="datePicker2" name="date">
 <input type="color">
 
 <script>
-  // Get references to the date input fields
+  
   const startDateInput = document.getElementById('datePicker1');
   const endDateInput = document.getElementById('datePicker2');
 
-  // Get the current date
+  
   const today = new Date().toISOString().split('T')[0];
 
-  // Set the minimum date for the start date input to today
   startDateInput.setAttribute('min', today);
 
   // Add an event listener to the start date input to validate the dates
