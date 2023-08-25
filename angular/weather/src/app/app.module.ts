@@ -6,14 +6,13 @@ import { AppComponent } from './app.component';
 import { WeatherComponent } from './weather/weather.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { FilterByNamePipe } from './weather/filter.pipe';
+//import { FilterByNamePipe } from './weather/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    FilterByNamePipe
-
+   // FilterByNamePipe
   ],
   imports: [
     BrowserModule,

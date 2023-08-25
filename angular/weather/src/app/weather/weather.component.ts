@@ -1,49 +1,93 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { WeatherService } from '../weather.service';
-import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-weather',
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent {
- /*  name!: string;
-  weatherData: any;
+  forecastDates : Date[] = [];
+  startDate: string = '';   
+  endDate: string = '';     
+  latitude:number=0;
+  longitude:number=0;
+  
+  @Input() weeklyTemperatureData: number[] = [];
+  @Input() weatherData: any; 
 
-  constructor(private weatherService: WeatherService) {}
+  currentDate: Date = new Date();
+  currentIndex: number = 0;
+  days: any[] = [];
 
-  getWeather() {
-    this.weatherService.getWeather(this.name)
-    .subscribe(data=>{
-      this.weatherData=data;
-      console.log(data);
-    }); 
-  } */
-
-  constructor(private http: HttpClient) { }
-
-  startDate: string = ''; // Add this property and initialize it with an empty string
-  endDate: string = '';   // Add this property and initialize it with an empty string
-
-  // ... other methods ...
-  weatherData: any; // Replace 'any' with the actual type of your weather data
-  weeklyTemperatureData: number[] = [];
-
-  fetchWeatherData() {
-    // Validate if start and end dates are entered
-    if (!this.startDate || !this.endDate) {
-      return;
-    }
-
-    const latitude = 'your_latitude';
-    const longitude = 'your_longitude';
-
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&start_date=${this.startDate}&end_date=${this.endDate}&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m,&daily=uv_index_max&timezone=GMT`;
-
-    this.http.get(url).subscribe((response: any) => {
-      this.weatherData = response;
-      this.weeklyTemperatureData = response.hourly.temperature_2m;
-    });
+  constructor(private weatherService: WeatherService) {
+    this.calculateForecastDates();
   }
   
+  calculateForecastDates(){
+    const currentDate = new Date();
+
+    for (let i = 0; i <= 7; i++) {
+      const nextDate = new Date(currentDate);
+      nextDate.setDate(currentDate.getDate() + i);
+      this.forecastDates.push(nextDate);
+    }
+  }
+  
+  getCurrentWeather() {
+    const startDate = new Date(this.startDate);
+    //console.log("modified date" + startDate)
+    const endDate = new Date(this.endDate);
+    const daysDifference = Math.floor((endDate.getTime()-startDate.getTime())/(1000*60*60*24));
+    //console.log("daysDiffer" + daysDifference);
+    if(daysDifference>=0&& daysDifference<=6){
+      this.weatherService.getTemperature(this.latitude,this.longitude,this.startDate,this.endDate).subscribe(data=>{
+        this.weatherData.weather=data;
+        console.log(data);
+        this.boxData();
+      });
+    }else{
+      this.showAlert();
+    }
+  }
+
+  boxData(){
+    this.days=[];
+
+    const startDate = new Date(this.startDate);
+    const endDate =new Date(this.endDate);
+    const currentDate = new Date(startDate);
+    //console.log("current Date" + currentDate);
+
+    while(currentDate<=endDate) {
+      const currentDayData = this.getTempratureDataForDay(currentDate);
+      // console.log("current Day Daye" + currentDayData);
+      this.days.push(currentDayData);
+      currentDate.setDate(currentDate.getDate()+1);
+    }
+  }
+
+  getTempratureDataForDay(date:Date):any{
+    const times = Math.floor(date.getTime()/1000);
+    const index = this.weatherData.weather.hourly.time.indexOf(times);
+    //console.log("time" + times);
+    //console.log("index" + index);
+
+    if(index!==-1) {
+      return {
+        date: date.toDateString(),
+        temperature:this.weatherData.weather.hourly.temperature_2m[index],
+        humidity:this.weatherData.weather.hourly.relativehumidity_2m[index],
+      };
+    } else {
+      return {
+        date: date.toDateString(),
+        temperature:null,
+        humidity:null
+      }
+    }
+  }
+
+  showAlert(){
+    alert("Please fill a validate date for 7 days");
+  }
 }
