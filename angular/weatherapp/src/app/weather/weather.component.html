@@ -30,6 +30,8 @@
         <div class="weather-description">
           <h2>Latitude:<span *ngIf="weatherData"> {{ weatherData.results[0].latitude }} N</span></h2>
           <h2>Longitude: <span *ngIf="weatherData"> {{ weatherData.results[0].longitude}} E</span></h2>
+          <p> Sunrise : <span *ngIf="weatherData.weather">{{ formatTime(weatherData.weather.daily.sunrise[0]) }}</span></p> 
+            <p> Sunset : <span *ngIf="weatherData.weather"> {{ formatTime(weatherData.weather.daily.sunset[0]) }}</span></p>
         </div>
           <div class="temp">
           <div><img src="../assets/pic15.png" class="image" >  <span class="span" *ngIf="weatherData.weather">{{weatherData.weather.current_weather.temperature}} °C</span></div>

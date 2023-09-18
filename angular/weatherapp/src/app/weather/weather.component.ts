@@ -151,6 +151,17 @@ export class WeatherComponent {
     }
     return '../assets/pic5.jpg'; 
   }
+  formatTime(timeString: string): string {
+    if (!timeString) return '';
+
+  const date = new Date(timeString);
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const amPm = hours >= 12 ? 'PM' : 'AM';
+  const formattedHours = hours % 12 || 12;
+
+return `${formattedHours}:${minutes.toString().padStart(2, '0')} ${amPm}`;
+}
 
  getWeatherIcon(weatherCode: number): string {
   const iconBaseUrl = 'http://openweathermap.org/img/wn/';

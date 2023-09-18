@@ -14,7 +14,7 @@ export class WeatherService {
   }
 
   getTemperature(latitude: number, longitude: number) {
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&start_date=2023-08-04&end_date=2023-08-18&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m,&daily=uv_index_max&timezone=GMT`;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&start_date=2023-08-04&end_date=2023-08-18&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m,&daily=sunrise,sunset,uv_index_max&timezone=GMT`;
     return this.http.get(url);
   }
 }

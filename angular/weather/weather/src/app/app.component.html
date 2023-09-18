@@ -1,0 +1,57 @@
+<div class="container">
+  <h1 class="h1">Weather Application</h1>
+   <div id="search"> 
+    <div>
+      <input type="text" (focus)="clearLocation()" placeholder="Enter a city name" [(ngModel)]="location" (keydown.enter)="getWeather()" id="searchInput">
+    </div>
+    <button type="button" (click)="search()" class="searchControl">Get Weather</button>
+    </div>
+  <div class="error-message" *ngIf="showError">Please enter a city name.</div>
+  <div class="location-suggestions" *ngIf="filteredLocations.length>0">
+  <!--   <ul>
+      <li *ngIf="let suggestion of filteredLocations" (click)="selectCity(suggestion)">
+        {{ suggestion.name }}
+      </li> 
+    </ul>-->
+  </div>
+  <div class="card">
+    <img id="weather-image" [src]="getWeatherImage()" alt="Weather Image">
+    <div class="date">Date:<span>{{date|date}}</span></div>
+    <div *ngIf="weatherData">
+     
+      <div id="weather-description">
+        <h2 class="location">{{weatherData.results[0].name}}/{{weatherData.results[0].country}}</h2>
+        <div *ngIf="weatherData.weather">
+          <img id="icon-image" [src]="getWeatherIcon(weatherData.weather.current_weather.weathercode)">
+        </div>
+      </div>
+      <div class="weather-description">
+        <h2>Latitude:<span *ngIf="weatherData">{{weatherData.results[0].latitude}} N</span></h2>
+        <h2>Longitude:<span *ngIf="weatherData">{{weatherData.results[0].longitude}} E</span></h2>
+      </div>
+      <div class="temp">
+        <div>
+          <img src="assets/images/pic15.png" class="image"><span class="span" *ngIf="weatherData.weather">{{weatherData.weather.current_weather.temperature}}°C</span>
+        </div>
+        <div id="humunity">
+          <img src="assets/images/pic14.png" class="image"><span *ngIf="weatherData.weather">{{weatherData.weather.hourly.relativehumidity_2m[0]}}%</span>
+        </div>
+      </div>
+      <!--<div class="weathercode">
+        <p>weathercode:<span>{{weatherData.weather.current_weather.weathercode}}</span></p>-->
+        <div class="windspeed">
+          <img src="assets/images/pic13.png" class="image"><span *ngIf="weatherData.weather">{{weatherData.weather.current_weather.windspeed}}km/h</span>
+        </div>
+        <h3 class="timezone">Timezone:<span *ngIf="weatherData">{{weatherData.results[0].timezone}}</span></h3>
+        <div class="time">
+          <p>Weather:<span class="p" *ngIf="weatherData.weather">{{getWeatherDescription(weatherData.weather.current_weather.weathercode)}}</span></p>
+          <p>Time:<span *ngIf="weatherData.weather">{{weatherData.weather.current_weather.time}}</span></p>
+        </div>
+        <div class="uvindex">
+          <p>Uv Index:<span *ngIf="weatherData.weather">{{weatherData.weather.daily.uv_index_max[0]}}</span></p>
+          <p>WindDirection:<span *ngIf="weatherData.weather">{{weatherData.weather.current_weather.winddirection}}</span></p>
+        </div>
+    </div>
+  </div>
+</div>
+<app-weather [weeklyTemperatureData]="weeklyTemperatureData" [weatherData]="weatherData"></app-weather>
