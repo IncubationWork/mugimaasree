@@ -32,9 +32,7 @@ const productList = {
         new Product('https://incubationwork.github.io/mugimaasree/sample/DigitalClock/digital.html','pic21.png','Digital Clock'),
         new Product('https://incubationwork.github.io/mugimaasree/currency%20converter/currency.html','pic22.png','currency converter(javascript)'),
 
-
-
-    ],
+],
     render(){
         const prodContainer = document.getElementById('add-item');
         const prodList = document.createElement('ul');
