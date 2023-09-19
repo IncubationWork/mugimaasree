@@ -1,9 +1,0 @@
-.list{
-    width: 181px;
-    border: 2px solid black;
-    position: relative;
-    top: -1px;
-}
-.listsub:hover{
-    background-color: gray;
-}

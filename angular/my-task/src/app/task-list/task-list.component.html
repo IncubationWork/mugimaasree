@@ -1,8 +1,0 @@
-<input *ngIf="tasks.length" type="text" name="taskSearch" [(ngModel)]="searchText" placeholder="search task">
-<ng-content></ng-content>
-<ul (keydown)="handleDeleteKey($event)" tabindex="0">
-  <li *ngFor="let task of tasks | filterPipe:searchText ;let i = index">
-      {{task}}
-    <button (click)="removeTask(i)">Delete</button>
-  </li>
-</ul>
