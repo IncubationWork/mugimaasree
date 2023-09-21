@@ -11,7 +11,7 @@ const productList = {
     products: [
         new Product('https://mugimaasree.github.io/weatherApp/weather','pic.png','weatherApp'),
         new Product('https://mugimaasree.github.io/currency/currency','pic2.png','CurrencyConverter'),
-        new Product('https://mugimaasree.github.io/ToDo/','pic6.png','ToDoList'),
+        new Product('https://mugimaasree.github.io/TOdoList/','pic6.png','ToDoList'),
         new Product('https://mugimaasree.github.io/list/','pic7.png','ShowList'),
         new Product('https://mugimaasree.github.io/coordinates/input','pic5.png','coodinate'),
         new Product('https://mugimaasree.github.io/imageGallery/','pic8.png','Gallery'),
